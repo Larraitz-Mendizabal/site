@@ -22,14 +22,14 @@ breadcrumbs:
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Portugal
+  adjective: Portugués
 create_goals:
-  previous_next_links: false
+  previous_next_links: true
   goal_content_heading: ''
   goals: []
 create_indicators:
-  previous_next_links: false
+  previous_next_links: true
 create_pages:
   - filename: ''
     folder: /goals
@@ -142,9 +142,9 @@ indicator_tabs:
   tab_3: ''
   tab_4: ''
 languages:
-  - es
-  - eu
   - en
+  - eu
+  - es
 languages_public: []
 logos: []
 map_layers: []
