@@ -142,9 +142,9 @@ indicator_tabs:
   tab_3: ''
   tab_4: ''
 languages:
-  - es
-  - eu
   - en
+  - eu
+  - es
 languages_public: []
 logos: []
 map_layers: []
