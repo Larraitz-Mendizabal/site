@@ -117,7 +117,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Estado de los informes - Indicadores para los Objetivos de Desarrollo Sostenible</title>
+    <title>Informe de seguimiento - Indicadores para los Objetivos de Desarrollo Sostenible</title>
 
 
 
@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250318124357">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250327133148">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -166,7 +166,7 @@ layout-reportingstatus
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_contacts.suggestions\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","hide_menu":"Ocultar el menú de navegación","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","logo_title":"Ir a la página de inicio","show_menu":"Mostrar el menú de navegación","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Alternar menú. Haga clic para expandir o contraer el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"POC","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo.","enable_high_contrast":"Habilitar alto contraste","hide_menu":"Ocultar el menú de navegación","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","logo_title":"Ir a la página de inicio","show_menu":"Mostrar el menú de navegación","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Alternar menú. Haga clic para expandir o contraer el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div class="container internet-explorer-message">
@@ -177,9 +177,9 @@ layout-reportingstatus
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">POC</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
+    Este es un sitio web de desarrollo.
     
   </div>
 </div>
@@ -202,11 +202,11 @@ layout-reportingstatus
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/goals">Objetivos</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/es/reporting-status">Estado de informes</a>
+    <a class="nav-link" href="/site/es/reporting-status">Informe de seguimiento</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/news">Actualizaciones</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/es/faq">FAQ</a>
+    <a class="nav-link" href="/site/es/faq">Acerca de</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/about">Acerca de</a>
 </li></ul>
@@ -237,11 +237,15 @@ layout-reportingstatus
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      Español
+      ES
     </button>
     <ul class="dropdown-menu"><li>
             <a class="dropdown-item" href="/site/reporting-status/">
-              English
+              EN
+            </a>
+          </li><li>
+            <a class="dropdown-item" href="/site/eu/reporting-status/">
+              EU
             </a>
           </li></ul>
   </div>
@@ -253,8 +257,16 @@ layout-reportingstatus
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
             <a class="language-toggle-link" href="/site/reporting-status/">
-                English
+                EN
             </a>
+        </li><li class="language-option-eu list-inline-item">
+            <a class="language-toggle-link" href="/site/eu/reporting-status/">
+                EU
+            </a>
+        </li><li class="language-option-es list-inline-item">
+            <span class="language-toggle-active-language">
+                ES
+            </span>
         </li></ul>
 </div></span><a title="Habilitar alto contraste" aria-label="Habilitar alto contraste"
     data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
@@ -283,7 +295,7 @@ data-event-label="high"
         <li class="breadcrumb-item" >
             <a href="/site/es/">Inicio</a>
         </li>
-        <li class="breadcrumb-item active">Estado de los informes</li>
+        <li class="breadcrumb-item active">Informe de seguimiento</li>
     </ol>
 </nav>
 </div>
@@ -291,13 +303,13 @@ data-event-label="high"
 
   <h1>
   
-    Estado de los informes
+    Informe de seguimiento
   
 </h1>
 
 
 <div class="reporting-status-description">
-  <p>El estado de los informes proporciona una descripción general de la cantidad de datos de los Objetivos de Desarrollo Sostenible (ODS) que Australia informa.</p>
+  <p>El informe de seguimiento proporciona una descripción general del progreso en la consecución de los Objetivos de Desarrollo Sostenible (ODS) en la Comunidad Autónoma de Euskadi. Para saber más sobre el procedimiento para evaluar el progreso, ver <a href="https://eustat-des.github.io/site/metodologia">Metodología para la medición del progreso</a>.</p>
 
 </div>
 
@@ -315,7 +327,7 @@ data-event-label="high"
     
     <div class="details">
         <h2 class="status-goal">
-            Estado general de informes
+            Estado del progreso
         </h2>
         <span class="total"><span>248</span> indicadores</span>
         
@@ -343,7 +355,7 @@ data-event-label="high"
     </div>
     <br style="clear:both;">
 </div>
-  <h2>Estados por objetivos</h2><div class="goal reporting-status-item">
+  <h2>Progreso por objetivo</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/site/es/1/" title="Ver las metas e indicadores del Objetivo 1" aria-label="Ver las metas e indicadores del Objetivo 1">
         <img src="https://open-sdg.org/sdg-translations/assets/img/goals/es/1.png" alt="Fin de la Pobreza - Objetivo 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-"/>
@@ -974,7 +986,7 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Construido usando Open SDG</a>
+                            <a href="https://open-sdg.org">Construido con Open SDG</a>
                         </li>
                         
                         <li>
@@ -992,7 +1004,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/site/es/about/cookies-and-privacy/">Galletas</a>
+                            <a href="/site/es/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
@@ -1034,12 +1046,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250318124357'></script>
+<script src='/site/assets/js/sdg.js?v=20250327133148'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250318124357"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250327133148"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

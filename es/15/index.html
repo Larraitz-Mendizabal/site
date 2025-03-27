@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250318124357">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250327133148">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,7 +168,7 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_contacts.suggestions\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","hide_menu":"Ocultar el menú de navegación","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","logo_title":"Ir a la página de inicio","show_menu":"Mostrar el menú de navegación","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Alternar menú. Haga clic para expandir o contraer el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"POC","default_contrast":"Contraste estándar","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo.","enable_high_contrast":"Habilitar alto contraste","hide_menu":"Ocultar el menú de navegación","high_contrast":"Alto contraste","internet_explorer_message":"Hemos detectado que está utilizando Internet Explorer para visitar este sitio web. Internet Explorer ahora está siendo eliminado por Microsoft. Como resultado, este sitio web ya no es compatible con ninguna versión de Internet Explorer. Algunas características de este sitio no funcionarán. Debe usar un navegador moderno como Edge, Chrome, Firefox o Safari. Si tiene dificultades para instalar o acceder a un navegador diferente, comuníquese con su equipo de soporte de TI.","internet_explorer_message_title":"Este navegador de Internet ya no es compatible","logo_title":"Ir a la página de inicio","show_menu":"Mostrar el menú de navegación","skip_link":"Saltar al contenido principal","tag_line":"17 Objetivos para transformar nuestro mundo","toggle_menu":"Alternar menú. Haga clic para expandir o contraer el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div class="container internet-explorer-message">
@@ -179,9 +179,9 @@ layout-goal
     
 <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">POC</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
+    Este es un sitio web de desarrollo.
     
   </div>
 </div>
@@ -204,11 +204,11 @@ layout-goal
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/goals">Objetivos</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/es/reporting-status">Estado de informes</a>
+    <a class="nav-link" href="/site/es/reporting-status">Informe de seguimiento</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/news">Actualizaciones</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/site/es/faq">FAQ</a>
+    <a class="nav-link" href="/site/es/faq">Acerca de</a>
 </li><li class="nav-item ">
     <a class="nav-link" href="/site/es/about">Acerca de</a>
 </li></ul>
@@ -239,11 +239,15 @@ layout-goal
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      Español
+      ES
     </button>
     <ul class="dropdown-menu"><li>
             <a class="dropdown-item" href="/site/15/">
-              English
+              EN
+            </a>
+          </li><li>
+            <a class="dropdown-item" href="/site/eu/15/">
+              EU
             </a>
           </li></ul>
   </div>
@@ -255,8 +259,16 @@ layout-goal
     <i class="fa fa-globe language-toggle-globe-links"></i>
     <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
             <a class="language-toggle-link" href="/site/15/">
-                English
+                EN
             </a>
+        </li><li class="language-option-eu list-inline-item">
+            <a class="language-toggle-link" href="/site/eu/15/">
+                EU
+            </a>
+        </li><li class="language-option-es list-inline-item">
+            <span class="language-toggle-active-language">
+                ES
+            </span>
         </li></ul>
 </div></span><a title="Habilitar alto contraste" aria-label="Habilitar alto contraste"
     data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
@@ -287,6 +299,24 @@ data-event-label="high"
         
     </ol>
 </nav>
+  
+    
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
+        <a class="btn btn-primary" href="/site/es/14/" aria-labelledby="previous-link">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span id="previous-link" class="d-none d-md-inline">Objetivo anterior</span>
+        </a>
+    </div>
+    <div class="text-right">
+        <a class="btn btn-primary" href="/site/es/16/" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">Siguiente objetivo</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+
   
 </div>
 
@@ -355,7 +385,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-1-1/">Superficie forestal en proporción a la superficie total</a></span>
+              <span class="indicator-name"><a href="/site/es/15-1-1/">Superficie forestal en proporción a la superficie total</a></span>
               
 
 
@@ -395,7 +425,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-1-2/">Proporción de lugares importantes para la biodiversidad terrestre y del agua dulce incluidos en zonas protegidas, desglosada por tipo de ecosistema</a></span>
+              <span class="indicator-name"><a href="/site/es/15-1-2/">Proporción de lugares importantes para la biodiversidad terrestre y del agua dulce incluidos en zonas protegidas, desglosada por tipo de ecosistema</a></span>
               
 
 
@@ -450,7 +480,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-2-1/">Avances hacia la gestión forestal sostenible</a></span>
+              <span class="indicator-name"><a href="/site/es/15-2-1/">Avances hacia la gestión forestal sostenible</a></span>
               
 
 
@@ -505,7 +535,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-3-1/">Proporción de tierras degradadas en comparación con la superficie total</a></span>
+              <span class="indicator-name"><a href="/site/es/15-3-1/">Proporción de tierras degradadas en comparación con la superficie total</a></span>
               
 
 
@@ -560,7 +590,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-4-1/">Lugares importantes para la biodiversidad de las montañas incluidos en zonas protegidas</a></span>
+              <span class="indicator-name"><a href="/site/es/15-4-1/">Lugares importantes para la biodiversidad de las montañas incluidos en zonas protegidas</a></span>
               
 
 
@@ -600,7 +630,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-4-2/">Índice de cobertura verde de las montañas</a></span>
+              <span class="indicator-name"><a href="/site/es/15-4-2/">a) Índice de cobertura verde de las montañas y b) proporción de terreno montañoso degradado</a></span>
               
 
 
@@ -655,7 +685,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-5-1/">Índice de la Lista Roja</a></span>
+              <span class="indicator-name"><a href="/site/es/15-5-1/">Índice de la Lista Roja</a></span>
               
 
 
@@ -710,7 +740,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-6-1/">Número de países que han adoptado marcos legislativos, administrativos y normativos para asegurar una distribución justa y equitativa de los beneficios</a></span>
+              <span class="indicator-name"><a href="/site/es/15-6-1/">Número de países que han adoptado marcos legislativos, administrativos y normativos para asegurar una distribución justa y equitativa de los beneficios</a></span>
               
 
 
@@ -765,7 +795,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-7-1/">Proporción de especímenes de flora y fauna silvestre comercializados procedentes de la caza furtiva o el tráfico ilícito</a></span>
+              <span class="indicator-name"><a href="/site/es/15-7-1/">Proporción de especímenes de flora y fauna silvestre comercializados procedentes de la caza furtiva o el tráfico ilícito</a></span>
               
 
 
@@ -820,7 +850,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-8-1/">Proporción de países que han aprobado la legislación nacional pertinente y han destinado recursos suficientes para la prevención o el control de las especies exóticas invasoras</a></span>
+              <span class="indicator-name"><a href="/site/es/15-8-1/">Proporción de países que han aprobado la legislación nacional pertinente y han destinado recursos suficientes para la prevención o el control de las especies exóticas invasoras</a></span>
               
 
 
@@ -875,7 +905,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-9-1/">a) Número de países que han establecido metas nacionales de conformidad con la segunda Meta de Aichi del Plan Estratégico para la Diversidad Biológica 2011-2020 o metas similares en sus estrategias y planes de acción nacionales en materia de diversidad biológica y han informado de sus progresos en el logro de estas metas; y b) integración de la biodiversidad en los sistemas nacionales de contabilidad y presentación de informes, definidos como implementación del Sistema de Contabilidad Ambiental y Económica</a></span>
+              <span class="indicator-name"><a href="/site/es/15-9-1/">a) Número de países que han establecido metas nacionales de conformidad con la segunda Meta de Aichi del Plan Estratégico para la Diversidad Biológica 2011-2020 o metas similares en sus estrategias y planes de acción nacionales en materia de diversidad biológica y han informado de sus progresos en el logro de estas metas; y b) integración de la biodiversidad en los sistemas nacionales de contabilidad y presentación de informes, definidos como implementación del Sistema de Contabilidad Ambiental y Económica</a></span>
               
 
 
@@ -930,7 +960,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-a-1/">a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad</a></span>
+              <span class="indicator-name"><a href="/site/es/15-a-1/">a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad</a></span>
               
 
 
@@ -985,7 +1015,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-b-1/">a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad</a></span>
+              <span class="indicator-name"><a href="/site/es/15-b-1/">a) Asistencia oficial para el desarrollo destinada concretamente a la conservación y el uso sostenible de la biodiversidad y b) ingresos generados y financiación movilizada mediante instrumentos económicos pertinentes para la biodiversidad</a></span>
               
 
 
@@ -1040,7 +1070,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/site/es/15-c-1/">Proporción de especímenes de flora y fauna silvestre comercializados procedentes de la caza furtiva o el tráfico ilícito</a></span>
+              <span class="indicator-name"><a href="/site/es/15-c-1/">Proporción de especímenes de flora y fauna silvestre comercializados procedentes de la caza furtiva o el tráfico ilícito</a></span>
               
 
 
@@ -1079,7 +1109,7 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Construido usando Open SDG</a>
+                            <a href="https://open-sdg.org">Construido con Open SDG</a>
                         </li>
                         
                         <li>
@@ -1097,7 +1127,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/site/es/about/cookies-and-privacy/">Galletas</a>
+                            <a href="/site/es/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
@@ -1139,12 +1169,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250318124357'></script>
+<script src='/site/assets/js/sdg.js?v=20250327133148'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250318124357"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250327133148"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
