@@ -158,6 +158,14 @@
           "status": "notstarted"
         },
         {
+          "id": "2-2-E1",
+          "title": "global_indicators.2-2-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/2-2-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "2-3-1",
           "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
           "description": "",
@@ -179,6 +187,22 @@
           "description": "",
           "keywords": "",
           "href": "/site/2-4-1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-4-E1",
+          "title": "global_indicators.2-4-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/2-4-E1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-4-E2",
+          "title": "global_indicators.2-4-E2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/2-4-E2/",
           "status": "notstarted"
         },
         {

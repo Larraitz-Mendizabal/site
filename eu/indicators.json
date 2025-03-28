@@ -158,6 +158,14 @@
           "status": "notstarted"
         },
         {
+          "id": "2-2-E1",
+          "title": "global_indicators.2-2-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/eu/2-2-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "2-3-1",
           "title": "Ekoizpen-bolumena lan-unitateko, ustiategiaren tamainaren eta motaren arabera banakatuta (nekazaritza eta abeltzaintza/basogintza)",
           "description": "",
@@ -179,6 +187,22 @@
           "description": "",
           "keywords": "",
           "href": "/site/eu/2-4-1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-4-E1",
+          "title": "global_indicators.2-4-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/eu/2-4-E1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-4-E2",
+          "title": "global_indicators.2-4-E2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/eu/2-4-E2/",
           "status": "notstarted"
         },
         {
