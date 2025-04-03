@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250402063737">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250403065324">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -506,36 +506,180 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_disponible', "GRAFICO.5-1-1-titulo");
+        var propertyEditor = editor.getEditor('root.indicador_disponible');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_disponible');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_disponible'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_onu_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('meta_global', "meta_largo.5-1-titulo");
+        var propertyEditor = editor.getEditor('root.meta_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: meta_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.meta_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('objetivo_global', "objetivo_largo.5-titulo");
+        var propertyEditor = editor.getEditor('root.objetivo_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: objetivo_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.objetivo_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('definicion', "Proportion of affirmative responses out of the total number of questions  collected to measure the existence of legal frameworks to promote, strengthen,  and monitor gender equality in the four areas outlined in the Convention on  the Elimination of All Forms of Discrimination against Women (CEDAW) and the  Beijing Platform for Action");
+        var propertyEditor = editor.getEditor('root.definicion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: definicion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.definicion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('formula', "\n$$MJML^{t} = \\frac{NSI_{area}^{t}}{NSI_{area}^{t} + NNO_{area}^{t}} \\cdot 100$$\n\nwhere:\n\n$NSI_{area}^{t} =$ Number of \"YES\" responses to the questions in the corresponding \narea of ​​the specific questionnaire designed for indicator 5.1.1 by the United Nations \nin the year $t$\n\n$NNO_{area}^{t} =$ Number of \"NO\" responses to the questions in the corresponding \narea of ​​the specific questionnaire designed for indicator 5.1.1 by the United Nations \nin the year $t$\n");
+        var propertyEditor = editor.getEditor('root.formula');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: formula');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.formula'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('desagregacion', "Areas: Global legal framework and public life, Violence against women, Employment and \neconomic benefits, Marriage and family \n");
+        var propertyEditor = editor.getEditor('root.desagregacion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: desagregacion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.desagregacion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('periodicidad', "FUENTE.FREQ_A2");
+        var propertyEditor = editor.getEditor('root.periodicidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: periodicidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.periodicidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('observaciones', "\nThe United Nations established a 42-question \"YES/NO\" questionnaire to measure governments' \nefforts to establish legal frameworks to promote, strengthen, and monitor gender equality. \nThis questionnaire is divided into four areas outlined in the Convention on the Elimination \nof All Forms of Discrimination against Women (CEDAW) and the Beijing Platform for Action: \n\n1. Global Legal Framework and Public Life (questions 1-12)\n2. Violence against Women (questions 13-21)\n3. Employment and Income Support (questions 22-31)\n4. Marriage and Family (questions 32-42)\n");
+        var propertyEditor = editor.getEditor('root.observaciones');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: observaciones');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.observaciones'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('texto_oceca', "FUENTE.oceca");
+        var propertyEditor = editor.getEditor('root.texto_oceca');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: texto_oceca');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.texto_oceca'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.descripcion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('justificacion_global', "\nEquality and non-discrimination based on sex are core principles under \nthe international legal and policy framework, including the Convention \non the Elimination of All Forms of Discrimination against Women (CEDAW), \nwhich has 189 States parties, and the Beijing Platform for Action. This \nframework sets out the commitments of States to eliminate discrimination \nagainst women and promote gender equality, including in the area of legal \nframeworks. \n\nIn the Beijing Platform for Action, States pledged to revoke any remaining \nlaws that discriminate based on sex. The five-year review and appraisal of \nthe Beijing Platform for Action (Beijing +5) established 2005 as the target \ndate for the repeal of laws that discriminate against women. This deadline \nhas come and gone. While there has been progress in reforming laws to promote \ngender equality, discrimination against women in the law continues in many \ncountries. Even where legal reforms have taken place, gaps in implementation \npersist. \n\nRemoving discriminatory laws and putting in place legal frameworks that advance \ngender equality are prerequisites to ending discrimination against women and \nachieving gender equality (Goal 5, Target 5.1). Indicator 5.1.1 will be crucial \nin accelerating progress on the implementation of SDG 5 and all other gender-related \ncommitments in the 2030 Agenda for Sustainable Development. \n\nIndicator 5.1.1 measures Government efforts to put in place legal frameworks that \npromote, enforce and monitor gender equality. \n\nThe assessment is carried out by national counterparts, including National Statistical \nOffices (NSOs) and/or National Women’s Machinery (NWMs), and legal practitioners/\nresearchers on gender equality, using a questionnaire comprising 42 yes/no questions \nunder four areas of law: \n\n (i) overarching legal frameworks and public life<br>  \n (ii) violence against women<br>  \n (iii) employment and economic benefits<br>  \n (iv) marriage and family<br>  \n\nThe areas of law and questions are drawn from the international legal and policy \nframework on gender equality, in particular the Convention on the Elimination of All \nForms of Discrimination against Women (CEDAW), which has 189 States parties, and the \nBeijing Platform for Action. \n\nThe primary sources of information relevant for indicator 5.1.1 are legislation and \npolicy/action plans. \n\nSource: United Nations Statistics Division\n");
+        var propertyEditor = editor.getEditor('root.justificacion_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: justificacion_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.justificacion_global'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.comparabilidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('dato_global', "\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=5.1.1&seriesCode=SG_LGL_GENEQLFP&areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\"> Legal frameworks that promote, enforce and monitor gender equality (percentage of achievement, 0 - 100) -- Area 1: overarching legal frameworks and public life SG_LGL_GENEQLFP</a> UNSTATS\n\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=5.1.1&seriesCode=SG_LGL_GENEQVAW&areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\"> Legal frameworks that promote, enforce and monitor gender equality (percentage of achievement, 0 - 100) -- Area 2: violence against women SG_LGL_GENEQVAW</a> UNSTATS\n\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=5.1.1&seriesCode=SG_LGL_SG_LGL_GENEQEMP&areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\"> Legal frameworks that promote, enforce and monitor gender equality (percentage of achievement, 0 - 100) -- Area 3: employment and economic benefits SG_LGL_GENEQEMP</a> UNSTATS\n\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=5.1.1&seriesCode=SG_LGL_GENEQMAR&areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\"> Legal frameworks that promote, enforce and monitor gender equality (percentage of achievement, 0 - 100) -- Area 4: marriage and family SG_LGL_GENEQMAR</a> UNSTATS");
+        var propertyEditor = editor.getEditor('root.dato_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: dato_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_global'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_ccaa'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_meta_enlace', "<a href=\"https://unstats.un.org/sdgs/metadata/files/Metadata-05-01-01.pdf\">Metadata 5-1-1.pdf</a>");
+        var propertyEditor = editor.getEditor('root.indicador_meta_enlace');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_meta_enlace');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_meta_enlace'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.informacion_interes'));
@@ -562,6 +706,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_updated_date'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-04-02");
+        var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_metadata_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_updated_date'));
 
     
@@ -700,7 +856,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250402063737'></script>
+<script src='/site/assets/js/sdg.js?v=20250403065324'></script>
 
 
 <script>
@@ -720,7 +876,7 @@ data-event-label="high"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250402063737"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250403065324"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

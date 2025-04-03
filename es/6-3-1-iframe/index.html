@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250402063737">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250403065324">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -423,59 +423,18 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicador disponible </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Proporción de los flujos de aguas residuales conectadas a un sistema de colectores, y tratados de manera adecuada</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
   
       
       
@@ -485,6 +444,188 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Meta </th>
+        <td>
+          
+            <p>6.3 De aquí a 2030, mejorar la calidad del agua reduciendo la contaminación, eliminando el vertimiento y minimizando la emisión de productos químicos y materiales peligrosos, reduciendo a la mitad el porcentaje de aguas residuales sin tratar y aumentando considerablemente el reciclado y la reutilización sin riesgos a nivel mundial</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Objetivo </th>
+        <td>
+          
+            <p>6 Garantizar la disponibilidad y la gestión sostenible del agua y el saneamiento para todos</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Definición del indicador </th>
+        <td>
+          
+            
+<p>The indicator is made up of 2 series:</p>
+
+<ul>
+  <li>
+    <p>Proportion of safely treated domestic wastewater flows: Proportion of the pollution 
+ load corresponding to urban agglomerations with more than 2,000 population equivalents 
+ that treat their wastewater, reducing their pollution level to an acceptable limit for 
+ the receiving waters</p>
+  </li>
+  <li>
+    <p>Proportion of domestic wastewater flows connected to a collection system: Proportion 
+ of the pollution load corresponding to urban agglomerations with more than 2,000 population 
+ equivalents connected to a conduit system that collects and conveys their wastewater to a 
+ treatment facility or final discharge point</p>
+  </li>
+</ul>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Fórmula teórica </th>
+        <td>
+          
+            
+<p><b>Proportion of safely treated domestic wastewater flows</b></p>
+
+\[PCC_{\text{purification}}^{t} =
+  \left( \frac{CC_{\text{purification}}^{t}}{CC^{t}} \cdot 100 \right)\]
+
+<p>where:</p>
+
+<p>$CC_{\text{purification}}^{t} =$ pollution load corresponding to urban agglomerations 
+with more than 2,000 population equivalents that adequately treat their wastewater in year $t$</p>
+
+<p>$CC^{t} =$ pollution load corresponding to urban agglomerations with more than 2,000 
+ population equivalents in year $t$</p>
+
+<p><br /></p>
+
+<p><b>Proportion of domestic wastewater flows connected to a collection systemc</b></p>
+
+\[PCC_{\text{collectors}}^{t} =
+  \left( \frac{CC_{\text{collectors}}^{t}}{CC^{t}} \cdot 100 \right)\]
+
+<p>where:</p>
+
+<p>$CC_{\text{collectors}}^{t} =$ pollution load corresponding to urban agglomerations 
+with more than 2,000 population equivalents connected to a conduit system that collects 
+and conveys their wastewater to a treatment facility or final discharge point $t$</p>
+
+<p>$CC^{t} =$ pollution load corresponding to urban agglomerations with more than 2,000 
+population equivalents in year $t$</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicidad </th>
+        <td>
+          
+            <p>Anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Observaciones </th>
+        <td>
+          
+            
+<p>The pollution load of an urban agglomeration is measured in equivalent inhabitants, 
+with an equivalent inhabitant defined as the biodegradable organic load with a five-day 
+biochemical oxygen demand of 60 grams of oxygen per day. An equivalent inhabitant 
+represents the biodegradable organic load generated by one person in one day in a typical home.</p>
+
+<p>It should be noted that the pollution load of an urban agglomeration not only includes 
+pollution due to human excrement, but also pollution from premises used for commercial<br />
+or industrial activities, provided that it is biodegradable organic. Therefore, the number 
+of equivalent inhabitants of an urban agglomeration is always greater than its actual number 
+of inhabitants.</p>
+
+<p>This indicator only takes into account urban agglomerations with more than 2,000 population 
+equivalents, in accordance with Articles 3 and 4 of Directive 91/271/EEC on urban wastewater 
+treatment.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">OCECA </th>
+        <td>
+          
+            <p><img src="/site/assets/img/oceca/ocecas_image.png" style="width: 200px; float: left; margin-right: 10px;" alt="Logotipo OCECAS" /> Indicador calculado utilizando una metodología armonizada entre los órganos centrales de estadística de las comunidades autónomas.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
         
           
       
@@ -535,8 +676,33 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Datos actualizados por última vez </th>
+        <td>
           
+            Oct 29, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadatos actualizados por última vez </th>
+        <td>
+          
+            Apr 02, 2025
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -576,6 +742,60 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Justificación </th>
+        <td>
+          
+            
+<p>Wastewater data are crucial to promote strategies for sustainable and safe wastewater 
+use or reuse to the benefit of the world’s population health and the global environment, 
+but also to respond to growing water demands, increasing water pollution loads, and climate 
+change impacts on water resources.</p>
+
+<p>Sustainable Development Goal 6 (SDG 6) is about ensuring the availability and sustainability 
+of water and sanitation for all by 2030. SDG Target 6.3 sets out to improve ambient water 
+quality, which is essential to protecting both ecosystem and human health, by eliminating, 
+minimizing and significantly reducing different streams of pollution into water bodies.</p>
+
+<p>The purpose of monitoring progress using SDG indicator 6.3.1 is to provide necessary and timely 
+information to decision makers and stakeholders to make informed decisions to accelerate progress 
+towards reducing water pollution, minimizing release of hazardous chemicals and increasing wastewater 
+treatment and reuse.</p>
+
+<p>The target wording covers wastewater recycling and safe reuse with implication on water use efficiency, 
+although it is not fully addressed by the global indicator and methodology. SDG indicator 6.3.1 tracks 
+the proportion of wastewater flows from households, services and industrial economic activities that 
+are safely treated at the source or through centralized wastewater treatment plants before being discharged 
+into the environment, out of the total volume of wastewater generated.</p>
+
+<p>Source: United Nations Statistics Division</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Comparabilidad entre el indicador disponible y el indicador de Naciones Unidas/Unión europea </th>
+        <td>
+          
+            <p>The available indicator does not comply with United Nations metadata but provides similar information.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -586,18 +806,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Metadatos del indicador de Naciones Unidas/Unión Europea </th>
+        <td>
           
-      
-      
-      
-        
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-06-03-01.pdf">Metadata 6-3-1.pdf</a></p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
+      
+  
       
       
       
@@ -678,7 +899,7 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250402063737'></script>
+<script src='/site/assets/js/sdg.js?v=20250403065324'></script>
 
 
 <script>
@@ -698,7 +919,7 @@ data-event-label="Change to indicator.sources tab"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250402063737"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250403065324"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -510,6 +510,14 @@
           "status": "notstarted"
         },
         {
+          "id": "4-1-E1",
+          "title": "global_indicators.4-1-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/4-1-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "4-2-1",
           "title": "Proportion of children aged 24–59 months who are developmentally on track in health, learning and psychosocial well-being, by sex",
           "description": "",
@@ -926,6 +934,14 @@
           "status": "notstarted"
         },
         {
+          "id": "8-5-E1",
+          "title": "global_indicators.8-5-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/8-5-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "8-6-1",
           "title": "Proportion of youth (aged 15–24 years) not in education, employment or training",
           "description": "",
@@ -1059,6 +1075,14 @@
           "description": "",
           "keywords": "",
           "href": "/site/9-4-1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-4-E1",
+          "title": "global_indicators.9-4-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/9-4-E1/",
           "status": "notstarted"
         },
         {

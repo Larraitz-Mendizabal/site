@@ -510,6 +510,14 @@
           "status": "notstarted"
         },
         {
+          "id": "4-1-E1",
+          "title": "global_indicators.4-1-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/4-1-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "4-2-1",
           "title": "Proporción de niños de 24 a 59 meses cuyo desarrollo es adecuado en cuanto a la salud, el aprendizaje y el bienestar psicosocial, desglosada por sexo",
           "description": "",
@@ -926,6 +934,14 @@
           "status": "notstarted"
         },
         {
+          "id": "8-5-E1",
+          "title": "global_indicators.8-5-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/8-5-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "8-6-1",
           "title": "Proporción de jóvenes (entre 15 y 24 años) que no cursan estudios, no están empleados ni reciben capacitación",
           "description": "",
@@ -1059,6 +1075,14 @@
           "description": "",
           "keywords": "",
           "href": "/site/es/9-4-1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-4-E1",
+          "title": "global_indicators.9-4-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/9-4-E1/",
           "status": "notstarted"
         },
         {
