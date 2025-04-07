@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407125706">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -585,59 +585,18 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Indicador disponible </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Residuos urbanos recogidos per cápita y proporción de residuos tratados, desglosados por tipo de tratamiento</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
   
       
       
@@ -647,6 +606,175 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Meta </th>
+        <td>
+          
+            <p>11.6 De aquí a 2030, reducir el impacto ambiental negativo per cápita de las ciudades, incluso prestando especial atención a la calidad del aire y la gestión de los desechos municipales y de otro tipo</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Objetivo </th>
+        <td>
+          
+            <p>11 Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Definición del indicador </th>
+        <td>
+          
+            <p>Urban waste collected per capita and proportion of urban waste treated  (incinerated, landfilled, and recycled) in relation to total urban waste  generated. Urban waste is considered to be waste from households and the  service sector (businesses, offices, and public or private institutions),  the management of which is assumed by local authorities.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Fórmula teórica </th>
+        <td>
+          
+            
+<p><b> Urban waste collected per capita</b></p>
+
+\[RURP^{t} = \frac{RUR^{t}}{P^{t}}\]
+
+<p>where:</p>
+
+<p>$RUR^{t} =$ amount of urban waste collected in year $t$</p>
+
+<p>$P^{t} =$ population as of 1 July of year $t$</p>
+
+<p><br /></p>
+
+<p><b> Proportion of urban waste collected and managed in controlled facilities</b></p>
+
+\[PRUR^{t} = \frac{RUG^{t}}{RUR^{t}} \cdot 100\]
+
+<p>where:</p>
+
+<p>$RUG^{t} =$ amount of urban waste generated in year $t$</p>
+
+<p>$RUR^{t} =$ amount of urban waste collected and managed in controlled facilities in year $t$</p>
+
+<p><br /></p>
+
+<p><b> Proportion of urban waste treated, per treatment operation</b></p>
+
+<p>\(PRU_{treatment}^{t} = \frac{RU_{treatment}^{t}}{RU^{t}} \cdot 100\) <br /></p>
+
+<p>$RU_{treatment}^{t} =$ amount of urban waste treated (by type of treatment) in year $t$</p>
+
+<p>$RUR^{t} =$ amount of urban waste collected and managed in controlled facilities in year $t$</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Desagregaciones disponibles </th>
+        <td>
+          
+            <p>Waste treatment operations: recycling; incineration with energy recovery; landfill disposal</p>
+
+<p>Province</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Periodicidad </th>
+        <td>
+          
+            <p>Anual</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Observaciones </th>
+        <td>
+          
+            
+<p>Urban waste is understood to mean domestic and commercial waste from homes and  the service sector (commerce, offices, and institutions) managed by local authorities.  It does not include commercial waste managed by private channels other than municipal  waste or waste from industry.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">OCECA </th>
+        <td>
+          
+            <p><img src="/site/assets/img/oceca/ocecas_image.png" style="width: 200px; float: left; margin-right: 10px;" alt="Logotipo OCECAS" /> Indicador calculado utilizando una metodología armonizada entre los órganos centrales de estadística de las comunidades autónomas.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
         
           
       
@@ -699,6 +827,21 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadatos actualizados por última vez </th>
+        <td>
+          
+            Apr 07, 2025
+          
+        </td>
+        </tr>
+        
+      
+  
   </tbody>
 </table>
 
@@ -738,28 +881,86 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Justificación </th>
+        <td>
+          
+            <p>Urban households and businesses produce substantial amounts of solid waste that 
+must be collected regularly, recycled or treated and disposed properly in order 
+to maintain healthy and sanitary living conditions.</p>
+
+<p>Many cities are increasingly facing solid waste management challenges due to rapid 
+urbanization, lack of technical and financial capacity or low policy priority. In 
+addition, the higher the income level of a city, the greater the amount of the solid 
+waste produced.</p>
+
+<p>Therefore, the economic growth to be experienced in the developing and emerging 
+countries will pose greater challenges in solid waste management to local governments 
+in the next decades.</p>
+
+<p>Source: United Nations Statistics Division</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Comparabilidad entre el indicador disponible y el indicador de Naciones Unidas/Unión europea </th>
+        <td>
+          
+            <p>The available indicator complies with United Nations metadata</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Resultados internacionales </th>
+        <td>
+          
+            
+<p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=11.6.1&amp;seriesCode=EN_REF_WASCOL&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=NOCITI"> Municipal Solid Waste collection coverage, by cities (%) EN_REF_WASCOL</a> UNSTATS</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Metadatos del indicador de Naciones Unidas/Unión Europea </th>
+        <td>
           
-      
-      
-      
-        
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-11-06-01.pdf">Metadata 11-6-1.pdf</a></p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
+  
       
       
       
@@ -907,7 +1108,7 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
+<script src='/site/assets/js/sdg.js?v=20250407125706'></script>
 
 
 <script>
@@ -927,7 +1128,7 @@ data-event-label="Change to indicator.sources tab"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407125706"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

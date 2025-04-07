@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407125706">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -506,36 +506,180 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_disponible', "GRAFICO.11-a-1-titulo");
+        var propertyEditor = editor.getEditor('root.indicador_disponible');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_disponible');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_disponible'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_onu_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('meta_global', "meta_largo.11-a-titulo");
+        var propertyEditor = editor.getEditor('root.meta_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: meta_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.meta_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('objetivo_global', "objetivo_largo.11-titulo");
+        var propertyEditor = editor.getEditor('root.objetivo_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: objetivo_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.objetivo_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('definicion', "This indicator is composed of two time series:\n\n- Proportion of the population residing in municipalities that have a land use plan\n- Proportion of the population residing in municipalities that have a general plan \n  or subsidiary urban planning regulations\n");
+        var propertyEditor = editor.getEditor('root.definicion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: definicion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.definicion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('formula', "\n<b>Proportion of the population residing in municipalities that have a land use plan</b>\n\n$$PPTP^{t} = \\frac{PTP^{t}}{P^{t}} \\cdot 100$$\n\nwhere:\n\n$PTP^{t} =$ population residing in municipalities that have a Partial Territorial Plan on January 1 of year $t$\n\n$P^{t} =$ population as of January 1 of year $t$\n\n\n<br>\n\n<b>Proportion of the population residing in municipalities that have a general plan or subsidiary urban planning regulations</b>\n\n$$PPPGNS^{t} = \\frac{PPG^{t}+PNS^{t}}{P^{t}} \\cdot 100$$\n\nwhere:\n\n$PPG^{t} =$ population residing in municipalities that have a general plan on January 1 of year $t$\n\n$PNS^{t} =$ population residing in municipalities that have subsidiary regulations on January 1 of year $t$\n\n$P^{t} =$ population as of January 1 of year $t$\n");
+        var propertyEditor = editor.getEditor('root.formula');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: formula');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.formula'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.desagregacion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('periodicidad', "FUENTE.FREQ_A");
+        var propertyEditor = editor.getEditor('root.periodicidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: periodicidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.periodicidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('observaciones', "");
+        var propertyEditor = editor.getEditor('root.observaciones');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: observaciones');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.observaciones'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('texto_oceca', "FUENTE.oceca");
+        var propertyEditor = editor.getEditor('root.texto_oceca');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: texto_oceca');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.texto_oceca'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.descripcion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('justificacion_global', "This indicator is based on the notion that the development and implementation \nof National Urban Policies should support participation, partnership, cooperation \nand coordination of actors as well as facilitate dialogue. National Urban Policy \n(NUP) and Regional Development Plans (RDP) promote coordinated and connected urban \ndevelopment. A coordinated effort from government through a NUP or RDP provides the \nbest opportunity for achieving sustainable urbanization and balanced territorial \ndevelopment by linking sectorial policies, connecting national, regional and local \ngovernment policies, strengthening urban, peri-urban and rural links through balanced \nterritorial development. \n\nThis indicator provides a good barometer on global progress on sustainable national \nurban policies. It serves as gap analysis to support policy recommendations. The \nindicator can identify good practices and policies among countries that can promote \npartnership and cooperation between all stakeholders. This indicator is both process \noriented and aspirational and has the potential to support the validation of Goal 11 \nand other SDGs indicators with an urban component. The indicator has the ability to \nbe applicable at multi jurisdictions levels, i.e covering a number of areas while taking \ncare of urban challenges in a more integrated national manner. \n\nSource: United Nations Statistics Division \n");
+        var propertyEditor = editor.getEditor('root.justificacion_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: justificacion_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.justificacion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('comparabilidad', "The available indicator partially complies with the United Nations metadata.");
+        var propertyEditor = editor.getEditor('root.comparabilidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: comparabilidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.comparabilidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('dato_global', "\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=11.a.1&seriesCode=SD_CPA_UPRDP&areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\"> Countries that have national urban policies or regional development plans that respond to population dynamics; ensure balanced territorial development; and increase local fiscal space (1 = YES; 0 = NO) SD_CPA_UPRDP</a> UNSTATS");
+        var propertyEditor = editor.getEditor('root.dato_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: dato_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_global'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_ccaa'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_meta_enlace', "<a href=\"https://unstats.un.org/sdgs/metadata/files/Metadata-11-0a-01.pdf\">Metadata 11-a-1.pdf</a>");
+        var propertyEditor = editor.getEditor('root.indicador_meta_enlace');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_meta_enlace');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_meta_enlace'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.informacion_interes'));
@@ -560,8 +704,32 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "");
+        var propertyEditor = editor.getEditor('root.national_data_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_data_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_updated_date'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-04-07");
+        var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_metadata_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_updated_date'));
 
     
@@ -700,7 +868,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
+<script src='/site/assets/js/sdg.js?v=20250407125706'></script>
 
 
 <script>
@@ -720,7 +888,7 @@ data-event-label="high"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407125706"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

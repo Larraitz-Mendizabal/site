@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407125706">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -481,7 +481,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definizioa </th>
         <td>
           
-            <p>Proportion of 15-year-olds who have achieved at least level 2 proficiency  in i) reading and ii) mathematics, by sex</p>
+            <p>i)Irakurtzeko eta ii)Matematikako gaitasunaren 2. maila gutxienez lortu duten 15 urteko pertsonen proportzioa</p>
 
           
         </td>
@@ -498,14 +498,14 @@ data-event-label="Change to indicator.sources tab"
         <td>
           
             
-\[PPN2_{proficiency}^{t} = \frac{PN2_{proficiency}^{t}}{P_{15}^{t}}\]
+\[PPN2_{gaitasuna}^{t} = \frac{PN2_{gaitasuna}^{t}}{P_{15}^{t}}\]
 
-<p>where:</p>
+<p>non:</p>
 
-<p>$PN2_{proficiency}^{t} =$ 15-year-old population that has reached at least level 2 
-proficiency in the subject in year $t$</p>
+<p>$PN2_{gaitasuna}^{t} =$ gai edo konpetentzian 2. mailako gutxieneko konpetentzia-maila lortu edo gainditu 
+duten 15 urteko pertsonen kopurua $t$ urtean</p>
 
-<p>$P_{15}^{t} =$ population aged 15 in year $t$</p>
+<p>$P_{15}^{t} =$ urteko biztanleak $t$ urtean</p>
 
           
         </td>
@@ -521,9 +521,9 @@ proficiency in the subject in year $t$</p>
         <th scope="row">Eskuragarri dauden desagregazioak </th>
         <td>
           
-            <p>Type of proficiency (subject): Reading comprehension, mathematics</p>
+            <p>Gaitasun mota: Irakurmen, matematika</p>
 
-<p>Sex</p>
+<p>Sexua</p>
 
           
         </td>
@@ -556,47 +556,99 @@ proficiency in the subject in year $t$</p>
         <td>
           
             
-<p>The Programme for International Student Assessment uses a scoring system with 
-no minimum or maximum score. The results are scaled to fit a normal distribution 
-with a mean of 500 and a standard deviation of 100. To aid in the interpretation 
-of these scores, reading proficiency categories are established:</p>
+<p>Ikasleen nazioarteko ebaluaziorako programak puntuazio-sistema bat erabiltzen du, eta ez dago gehieneko eta 
+gutxieneko puntuaziorik. Emaitzak eskalatzen dira, batez beste 500 puntuko banaketa normal bati eta 100 puntuko 
+desbiderapen tipiko bati erantzuteko moduan. Puntuazio horiek interpretatzen laguntzeko, irakurketarako 
+gaitasun-kategoriak ezartzen dira:</p>
 
 <ul>
-  <li>Below Level 1c: score below 189.33</li>
-  <li>Level 1c: score between 189.33 and 262.03</li>
-  <li>Level 1b: score between 262.04 and 334.74</li>
-  <li>Level 1a: score between 334.75 and 407.46</li>
-  <li>Level 2: score between 407.47 and 480.17</li>
-  <li>Level 3: score between 480.18 and 552.88</li>
-  <li>Level 4: score between 552.89 and 625.60</li>
-  <li>Level 5: score between 625.61 and 698.31</li>
-  <li>Level 6: score above 698.31</li>
+  <li>1c maila baino txikiagoa: puntuazioa 189,33 baino txikiagoa.</li>
+  <li>1c maila: 189,33 eta 262,03 arteko puntuazioa</li>
+  <li>1b maila: 262,04 eta 334,74 arteko puntuazioa</li>
+  <li>
+    <ol>
+      <li>maila: 334,75 eta 407,46 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 407,47 eta 480,17 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 480,18 eta 552,88 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 552,89 eta 625,60 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 625,61 eta 698,31 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 698,31tik gorako puntuazioa</li>
+    </ol>
+  </li>
 </ul>
 
-<p>A person reaches at least Level 2 reading proficiency when, for a text of average length, 
-he or she can identify the main idea, understand the relationships between its parts, 
-interpret the meaning of a limited part of the text through basic inferences, locate one 
-or more pieces of information according to multiple partially implicit criteria, reflect 
-on the general or specific purpose of the text, compare statements and evaluate the reasoning 
-on which they are based by establishing connections between the text and external knowledge.</p>
+<p>Pertsona batek, gutxienez, irakurtzeko gaitasunaren 2. maila lortzen du, baldin eta, hedadura ertaineko testu 
+baterako, ideia nagusia identifika badezake, bere atalen arteko harremanak uler baditzake, testuaren zati mugatu 
+baten esanahia oinarrizko inferentzien bidez interpreta badezake, informazio zati bat edo gehiago koka badezake 
+partzialki inplizituak diren hainbat irizpide kontuan hartuta, testuaren helburu orokorrari edo espezifikoari 
+buruz gogoeta egin badezake, baieztapenak alderatu baditzake eta horiek oinarri dituzten arrazoibideak ebaluatu 
+baditzake, testuaren eta kanpoko ezagutzaren arteko loturak ezarriz.</p>
 
-<p>The following proficiency categories are established in mathematics:</p>
+<p>Matematikako gaitasun-kategoria hauek ezartzen dira:</p>
 
 <ul>
-  <li>Below Level 1: score below 357.77</li>
-  <li>Level 1: score between 357.77 and 420.06</li>
-  <li>Level 2: score between 420.07 and 482.37</li>
-  <li>Level 3: score between 482.38 and 544.67</li>
-  <li>Level 4: score between 544.68 and 606.98</li>
-  <li>Level 5: score between 606.99 and 669.29</li>
-  <li>Level 6: score above 669.29</li>
+  <li>
+    <ol>
+      <li>maila baino txikiagoa: 357,77 puntu baino gutxiago</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 357,77 eta 420,06 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 420,07 eta 482,37 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 482,38 eta 544,67 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 544,68 eta 606,98 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 606,99 eta 669,29 arteko puntuazioa</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>maila: 669,29tik gorako puntuazioa</li>
+    </ol>
+  </li>
 </ul>
 
-<p>An individual achieves at least Level 2 proficiency in mathematics when he or she can interpret 
-and recognize situations in contexts that only require direct inference, extract relevant information 
-from a single source and make use of a single mode of representation, use elementary algorithms, 
-formulas, procedures or conventions to solve problems related to integers and carry out direct reasoning 
-and literal interpretations of the results.</p>
+<p>Pertsona batek matematikako gaitasuneko 2. maila lortzen du, gutxienez, zuzeneko inferentzia baino eskatzen 
+ez duten testuinguruetako egoerak interpretatzen eta ezagutzen dakienean, iturri bakar batetik informazio 
+egokia ateratzen dakienean eta irudikatzeko modu bakarra erabiltzen duenean, algoritmoak, formulak, prozedurak 
+edo oinarrizko konbentzioak erabiltzen dituenean zenbaki osoekin lotutako problemak ebazteko eta zuzeneko 
+arrazoibideak eta emaitzen hitzez hitzeko interpretazioak egiteko.</p>
 
           
         </td>
@@ -700,7 +752,7 @@ and literal interpretations of the results.</p>
         <th scope="row">Azken aldiz eguneratutako metadatuak </th>
         <td>
           
-            Apr 02, 2025
+            Oct 29, 2024
           
         </td>
         </tr>
@@ -751,15 +803,15 @@ and literal interpretations of the results.</p>
         <th scope="row">Justifikazioa </th>
         <td>
           
-            <p>The indicator aims to measure the percentage of children and young people who have achieved the 
-minimum learning outcomes in reading and mathematics during or at the end of the relevant stages of 
-education. The higher the figure, the higher the proportion of children and/or young people reaching 
-at least minimum proficiency in the respective domain (reading or mathematic).</p>
+            <p>Adierazlearen helburua da hezkuntzako etapa egokietan edo horien amaieran irakurketaren eta matematikaren 
+ikaskuntzako gutxieneko emaitzak lortu dituzten haurren eta gazteen ehunekoa neurtzea. Zenbat eta handiagoa 
+izan kopurua, orduan eta handiagoa izango da kasuan kasuko menderatzean (irakurketan edo matematikan) 
+gutxienez gutxieneko gaitasuna lortzen duten haurren eta/edo gazteen proportzioa.</p>
 
-<p>Learning outcomes from cross-national learning assessment are directly comparable for all countries 
-which participated in the same cross-national learning assessments.</p>
+<p>Nazioz gaindiko ikaskuntza-ebaluazioen ikaskuntzaren emaitzak zuzenean konpara daitezke ikaskuntza-ebaluazio 
+transnazional berberetan parte hartu zuten herrialde guztientzat.</p>
 
-<p>Source: United Nations Statistics Division</p>
+<p>Iturria: Nazio Batuen Estatistika Dibisioa</p>
 
           
         </td>
@@ -775,7 +827,7 @@ which participated in the same cross-national learning assessments.</p>
         <th scope="row">Eskuragarri dagoen adierazlearen eta NBE adierazlearen arteko konparagarritasuna </th>
         <td>
           
-            <p>The available indicator complies with United Nations metadata.</p>
+            <p>Eskuragarri dagoen adierazleak Nazio Batuen metadatuak betetzen ditu.</p>
 
           
         </td>
@@ -792,9 +844,9 @@ which participated in the same cross-national learning assessments.</p>
         <td>
           
             
-<p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=4.1.1&amp;seriesCode=SE_TOT_PRFL&amp;areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=BOTHSEX%20%7C%20LOWSEC%20%7C%20SKILL_READ"> Proportion of children and young people achieving a minimum proficiency level in reading (%) SE_TOT_PRFL</a> UNSTATS</p>
+<p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=4.1.1&amp;seriesCode=SE_TOT_PRFL&amp;areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=BOTHSEX%20%7C%20LOWSEC%20%7C%20SKILL_READ"> Beheko bigarren hezkuntzan irakurtzeko gutxieneko gaitasun-maila lortzen duten haur eta gazteen proportzioa (%) SE_TOT_PRFL</a> UNSTATS</p>
 
-<p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=4.1.1&amp;seriesCode=SE_TOT_PRFL&amp;areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=BOTHSEX%20%7C%20LOWSEC%20%7C%20SKILL_MATH"> Series: Proportion of children and young people achieving a minimum proficiency level in mathematics (%) SE_TOT_PRFL</a> UNSTATS</p>
+<p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=4.1.1&amp;seriesCode=SE_TOT_PRFL&amp;areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=BOTHSEX%20%7C%20LOWSEC%20%7C%20SKILL_MATH"> Beheko bigarren hezkuntzan matematikan gutxieneko gaitasun-maila lortzen duten haur eta gazteen proportzioa (%) SE_TOT_PRFL</a> UNSTATS</p>
 
           
         </td>
@@ -815,7 +867,7 @@ which participated in the same cross-national learning assessments.</p>
         <th scope="row">NBEko metadatuetarako esteka </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-04-01-01.pdf">Metadata 4-1-1.pdf </a></p>
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-04-01-01.pdf">Metadatuak 4-1-1.pdf </a>(ingelesez bakarrik)</p>
 
           
         </td>
@@ -903,7 +955,7 @@ which participated in the same cross-national learning assessments.</p>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
+<script src='/site/assets/js/sdg.js?v=20250407125706'></script>
 
 
 <script>
@@ -923,7 +975,7 @@ which participated in the same cross-national learning assessments.</p>
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407125706"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407125706">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -482,15 +482,19 @@ data-event-label="Change to indicator.sources tab"
         <td>
           
             
-<p>This indicator is composed of two time series:</p>
+<p>Adierazle honek bi denborazko serie ditu:</p>
 
-<p><b>-Premature mortality rate (between ages 30 and 70) attributed to non-communicable diseases: 
- probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or 
- chronic respiratory disease.</b></p>
-
-<p><b>-Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory 
- disease per 100,000 inhabitants </b>: Deaths attributed to cardiovascular disease, cancer, diabetes 
- or chronic respiratory disease per 100,000 inhabitants.</p>
+<ul>
+  <li>
+    <p>Transmititu ezin diren gaixotasunei egotzitako heriotza goiztiarren tasa (30-70 urte): gaixotasun kardiobaskularren, 
+minbiziaren, diabetesaren edo arnas gaixotasun kronikoen ondorioz 30 eta 70 urte bitartean hiltzeko probabilitatea.</p>
+  </li>
+  <li>
+    <p>Gaixotasun kardiobaskularrei, minbiziari, diabetesari edo arnas gaixotasun kronikoei egotzitako heriotza-tasa 100.000 
+biztanleko: gaixotasun kardiobaskularrei, minbiziari, diabetesari edo arnas gaixotasun kronikoei esleitutako 
+heriotzak 100.000 biztanleko</p>
+  </li>
+</ul>
 
           
         </td>
@@ -507,27 +511,27 @@ data-event-label="Change to indicator.sources tab"
         <td>
           
             
-<p><b>Premature mortality rate attributed to non-communicable diseases</b></p>
+<p><b>Tasa de mortalidad prematura atribuida a las enfermedades no transmisibles</b></p>
 
 \[^{5}M_x = \frac{DENT_{x,x+5}^{t}}{PENT_{x,x+5}^{t}}\]
 
-<p>where:</p>
+<p>non:</p>
 
-<p>$DENT_{x,x+5}^{t} =$ Deaths attributed to the 4 non-communicable diseases
-between exact age $x$ and exact age $x+5$ in year $t$</p>
+<p>$DENT_{x,x+5}^{t} =$ $x$ adin zehatzaren eta $x+5$ adin zehatzaren artean transmititu ezin diren 4 gaixotasunei 
+esleitutako heriotzak $t$ urtean</p>
 
-<p>$P^{t} =$ population between exact age $x$ and exact age $x+5$ in year $t$</p>
+<p>$P^{t} =$ $x$adin zehatzaren eta $x+5$ adin zehatzaren arteko biztanleria $t$ urtean</p>
 
-<p><b>Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory 
- disease per 100,000 inhabitants</b></p>
+<p><b>Gaixotasun kardiobaskularrei, minbiziari, diabetesari edo arnas gaixotasun kronikoei egotzitako heriotza-tasa 
+100.000 biztanleko</b></p>
 
 \[TM_{ENT}^{t} = \frac{D_{ENT}^{t}}{P^{t}} \cdot 100.000\]
 
-<p>where:</p>
+<p>non:</p>
 
-<p>$D_{ENT}^{t} =$ Deaths attributed to non-communicable diseases in year $t$</p>
+<p>$D_{ENT}^{t} =$ transmititu ezin diren gaixotasunei egotzitako heriotzak $t$ urtean</p>
 
-<p>$P^{t} =$ population as of 1 July of year $t$</p>
+<p>$P^{t} =$ biztanleria $t$ urteko uztailaren 1ean</p>
 
           
         </td>
@@ -544,9 +548,10 @@ between exact age $x$ and exact age $x+5$ in year $t$</p>
         <td>
           
             
-<p>Non-communicable disease (NCD): cardiovascular diseases, cancer, diabetes, or chronic respiratory disease</p>
+<p>Gaixotasun ez-transmitigarria (GET): gaixotasun kardiobaskularrak, minbizia, diabetesa edo arnas gaixotasun 
+kronikoak</p>
 
-<p>Sex</p>
+<p>Sexua</p>
 
           
         </td>
@@ -579,12 +584,12 @@ between exact age $x$ and exact age $x+5$ in year $t$</p>
         <td>
           
             
-<p>The following International Classification of Diseases codes are used for each of the non-communicable diseases:</p>
+<p>Gaixotasunen Nazioarteko Sailkapenaren kode hauek erabiltzen dira transmititu ezin den gaixotasun bakoitzerako:</p>
 <ul>
-  <li>cardiovascular diseases (ICD-10 codes I00-I99)</li>
-  <li>cancer (ICD-10 codes C00-C97)</li>
-  <li>diabetes (ICD-10 codes E10-E14)</li>
-  <li>chronic respiratory disease (ICD-10 codes J30-J98)</li>
+  <li>gaixotasun kardiobaskularrak (GNS-10eko I00-I99 kodeak)</li>
+  <li>minbizia (GNS-10eko C00-C97 kodeak)</li>
+  <li>diabetesa (GNS-10eko E10-E14 kodeak)</li>
+  <li>arnas gaixotasun kronikoak (GNS-10eko J30-J98 kodeak)</li>
 </ul>
 
           
@@ -689,7 +694,7 @@ between exact age $x$ and exact age $x+5$ in year $t$</p>
         <th scope="row">Azken aldiz eguneratutako metadatuak </th>
         <td>
           
-            Apr 02, 2025
+            Oct 29, 2024
           
         </td>
         </tr>
@@ -741,19 +746,21 @@ between exact age $x$ and exact age $x+5$ in year $t$</p>
         <td>
           
             
-<p>Morbidity from noncommunicable diseases (NCDs) among adults is increasing rapidly globally due to aging 
-and epidemiological transitions. Cardiovascular disease, cancer, diabetes, and chronic respiratory 
-diseases are the four leading causes of the NCD burden. Measuring the risk of dying from these four 
-leading causes is important for assessing the extent of the premature NCD mortality burden in a population, 
-assuming they would experience current mortality rates at any age and would not die from any other cause 
-of death (e.g., injuries or HIV/AIDS).</p>
+<p>Helduen artean transmititu ezin diren gaixotasunengatiko erikortasuna (ENT) azkar handitzen ari da mundu mailan, 
+zahartzearen eta trantsizio epidemiologikoen ondorioz. Gaixotasun kardiobaskularrak, minbizia, diabetesa eta arnas 
+gaixotasun kronikoak dira ENT kargaren lau kausa nagusiak. Lau kausa nagusi horiengatik hiltzeko arriskua neurtzea 
+garrantzitsua da ENT bidezko hilkortasun goiztiarraren kargaren norainokoa ebaluatzeko populazio batean, gaur 
+egungo hilkortasun-tasak edozein adinetan jasango lituzkeela eta ez litzatekeela beste heriotza-kausa batengatik 
+hilko (adibidez, lesioak edo GIB/HIESa).</p>
 
-<p>The mortality rate attributed to cardiovascular disease, cancer, diabetes, or chronic respiratory disease 
-is the probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or 
-chronic respiratory disease, defined as the percentage of 30-year-olds who would die before reaching age 70
-from cardiovascular disease, cancer, diabetes, or chronic respiratory disease, assuming they would 
-experience current mortality rates at any age and would not die from any other cause of death (e.g., 
-injuries or HIV/AIDS).</p>
+<p>Gaixotasun kardiobaskularrei, minbiziari, diabetesari edo arnasketako gaixotasun kronikoei egotzitako heriotza-tasa 
+gaixotasun kardiobaskularren, minbiziaren, diabetesaren edo arnasketako gaixotasun kronikoen ondorioz 30 eta 70 urte 
+bitartean hiltzeko probabilitatea da. Gaixotasun kardiobaskularren, minbiziaren, diabetesaren edo arnasketako gaixotasun 
+kronikoen ondorioz 70 urte bete baino lehen hilko liratekeen 30 urteko pertsonen ehunekoa da, eta gaur egungo 
+heriotza-tasak edozein adinetan izango lituzkeela eta ez litzatekeela beste heriotza-kausa batengatik hilko (adibidez, 
+lesioak edo GIB/HIESa).</p>
+
+<p>Iturria: Nazio Batuen Estatistika Dibisioa</p>
 
           
         </td>
@@ -769,7 +776,7 @@ injuries or HIV/AIDS).</p>
         <th scope="row">Eskuragarri dagoen adierazlearen eta NBE adierazlearen arteko konparagarritasuna </th>
         <td>
           
-            <p>The available indicator complies with United Nations metadata</p>
+            <p>Eskuragarri dagoen adierazleak Nazio Batuen adierazlearen metadatuak betetzen ditu.</p>
 
           
         </td>
@@ -785,7 +792,7 @@ injuries or HIV/AIDS).</p>
         <th scope="row">Nazioarteko emaitzak </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=3.4.1&amp;seriesCode=SH_DTH_NCOM&amp;areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=30-70%20%7C%20BOTHSEX">Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease (probability) SH_DTH_NCOM</a> UNSTATS</p>
+            <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=3.4.1&amp;seriesCode=SH_DTH_NCOM&amp;areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=30-70%20%7C%20BOTHSEX">Gaixotasun kardiobaskularrei, minbiziari, diabetesari edo arnas gaixotasun kronikoei egotzitako heriotza-tasa (probabilitatea) SH_DTH_NCOM</a> UNSTATS</p>
 
           
         </td>
@@ -806,7 +813,7 @@ injuries or HIV/AIDS).</p>
         <th scope="row">NBEko metadatuetarako esteka </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-03-04-01.pdf">Metadata 3-4-1.pdf</a></p>
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-03-04-01.pdf">Metadatuak 3-4-1.pdf</a> (ingelesez bakarrik)</p>
 
           
         </td>
@@ -894,7 +901,7 @@ injuries or HIV/AIDS).</p>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
+<script src='/site/assets/js/sdg.js?v=20250407125706'></script>
 
 
 <script>
@@ -914,7 +921,7 @@ injuries or HIV/AIDS).</p>
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407125706"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

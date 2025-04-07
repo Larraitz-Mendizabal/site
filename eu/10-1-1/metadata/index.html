@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407125706">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -506,36 +506,192 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_disponible', "global_indicators.10-1-1-title");
+        var propertyEditor = editor.getEditor('root.indicador_disponible');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_disponible');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_disponible'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_onu_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('meta_global', "meta_largo.10-1-titulo");
+        var propertyEditor = editor.getEditor('root.meta_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: meta_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.meta_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('objetivo_global', "objetivo_largo.10-titulo");
+        var propertyEditor = editor.getEditor('root.objetivo_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: objetivo_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.objetivo_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('definicion', "Average annualized growth rate over a five-year period of income and expenditure per  capita of households in the poorest 40% of the population of the autonomous community  (40% of people with the lowest income per consumption unit (modified OECD scale)) and  of the total population.");
+        var propertyEditor = editor.getEditor('root.definicion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: definicion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.definicion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('formula', "\nThe annualized growth in average real per capita income or consumption is calculated by \nfirst estimating the average real per capita income or consumption of the bottom 40% of \nthe welfare distribution in years T0 and T1 and then calculating the average annual growth \nrate between those years using a compound growth formula: \n\nCrecimiento del ingreso o consumo = $$\\left( \\frac{Average\\, T_1}{Average\\, T_0} \\right)^{\\frac{1}{T_1 - T_0}} - 1$$\n\n\nThe growth in average real per capita income or consumption of the total population is \ncalculated in the same way using data for the total population. \n");
+        var propertyEditor = editor.getEditor('root.formula');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: formula');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.formula'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('desagregacion', "Income group: bottom 40%; total\n\nProvince\n");
+        var propertyEditor = editor.getEditor('root.desagregacion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: desagregacion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.desagregacion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('periodicidad', "FUENTE.FREQ_A");
+        var propertyEditor = editor.getEditor('root.periodicidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: periodicidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.periodicidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('observaciones', "\nThe number of units of consumption of a household is calculated using the modified OECD scale,  which assigns a weighting of 1 to the first person aged 14 or over, a weighting of 0.5 to other  persons aged 14 or over and a weighting of 0.3 to persons under the age of 14. ");
+        var propertyEditor = editor.getEditor('root.observaciones');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: observaciones');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.observaciones'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('texto_oceca', "FUENTE.oceca");
+        var propertyEditor = editor.getEditor('root.texto_oceca');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: texto_oceca');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.texto_oceca'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.descripcion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('justificacion_global', "\nImprovements in shared prosperity require both a growing economy and a consideration \nof equity. Shared prosperity explicitly recognizes that while growth is necessary for \nimproving economic welfare in a society, progress is measured by how those gains are \nshared with its poorest members.  \n\nMoreover, in an inclusive society it is not sufficient to raise everyone above an \nabsolute minimum standard of living; it must ensure that economic growth increases \nprosperity among the poor over time. \n\nThe decision to measure shared prosperity based on income or consumption was not taken \nto ignore the many other dimensions of welfare. It is motivated by the need for an \nindicator that is easy to understand, communicate, and measure – though measurement \nchallenges exist. Indeed, shared prosperity comprises many dimensions of well-being \nof the less well-off, and when analyzing shared prosperity in the context of a country, \nit is important to consider a wide range of indicators of welfare. \n\nSource: United Nations Statistics Division \n");
+        var propertyEditor = editor.getEditor('root.justificacion_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: justificacion_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.justificacion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('comparabilidad', "The available indicator complies with United Nations metadata.");
+        var propertyEditor = editor.getEditor('root.comparabilidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: comparabilidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.comparabilidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('dato_global', "");
+        var propertyEditor = editor.getEditor('root.dato_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: dato_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_global'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_ccaa'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_meta_enlace', "<a href=\"https://unstats.un.org/sdgs/metadata/files/Metadata-10-01-01.pdf\">Metadata 10-1-1.pdf</a>");
+        var propertyEditor = editor.getEditor('root.indicador_meta_enlace');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_meta_enlace');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_meta_enlace'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.informacion_interes'));
@@ -560,8 +716,32 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "");
+        var propertyEditor = editor.getEditor('root.national_data_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_data_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_updated_date'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-04-07");
+        var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_metadata_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_updated_date'));
 
     
@@ -700,7 +880,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
+<script src='/site/assets/js/sdg.js?v=20250407125706'></script>
 
 
 <script>
@@ -720,7 +900,7 @@ data-event-label="high"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407125706"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

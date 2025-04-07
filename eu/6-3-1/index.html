@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407125706">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -644,20 +644,18 @@ data-event-label="Change to indicator.sources tab"
         <td>
           
             
-<p>The indicator is made up of 2 series:</p>
+<p>Adierazleak 2 serie ditu:</p>
 
 <ul>
   <li>
-    <p>Proportion of safely treated domestic wastewater flows: Proportion of the pollution 
- load corresponding to urban agglomerations with more than 2,000 population equivalents 
- that treat their wastewater, reducing their pollution level to an acceptable limit for 
- the receiving waters</p>
+    <p>Modu egokian tratatutako etxeko hondakin-uren fluxuen proportzioa: 2.000 biztanle baliokidetik gorako 
+hiri-aglomerazioei dagokien karga kutsatzailearen proportzioa, hondakin-urak araztu eta kutsadura-maila 
+ur hartzaileentzat onargarria den mugaraino murrizten duena.</p>
   </li>
   <li>
-    <p>Proportion of domestic wastewater flows connected to a collection system: Proportion 
- of the pollution load corresponding to urban agglomerations with more than 2,000 population 
- equivalents connected to a conduit system that collects and conveys their wastewater to a 
- treatment facility or final discharge point</p>
+    <p>Kolektore-sistema bati konektatutako etxeko hondakin-uren fluxuen proportzioa: 2.000 biztanletik gorako 
+hiri-aglomerazioei dagokien karga kutsatzailearen proportzioa, hondakin-urak bildu eta tratamendu-instalazio 
+batera edo azken isurketa-puntu batera eramango dituen hodi-sistema batera konektatuta</p>
   </li>
 </ul>
 
@@ -676,34 +674,30 @@ data-event-label="Change to indicator.sources tab"
         <td>
           
             
-<p><b>Proportion of safely treated domestic wastewater flows</b></p>
+<p><b>Modu egokian tratatutako etxeko hondakin-uren fluxuen proportzioa</b></p>
 
-\[PCC_{\text{purification}}^{t} =
-  \left( \frac{CC_{\text{purification}}^{t}}{CC^{t}} \cdot 100 \right)\]
+\[PCC_{\text{ur-arazketa}}^{t} = \left( \frac{CC_{\text{ur-arazketa}}^{t}}{CC^{t}} \cdot 100 \right)\]
 
-<p>where:</p>
+<p>non:</p>
 
-<p>$CC_{\text{purification}}^{t} =$ pollution load corresponding to urban agglomerations 
-with more than 2,000 population equivalents that adequately treat their wastewater in year $t$</p>
+<p>$CC_{\text{ur-arazketa}}^{t} =$ 2.000 biztanle baliokidetik gorako hiri-aglomerazioei dagokien karga 
+kutsatzailea, hondakin-urak behar bezala arazten dituena $t$ urtean</p>
 
-<p>$CC^{t} =$ pollution load corresponding to urban agglomerations with more than 2,000 
- population equivalents in year $t$</p>
+<p>$CC^{t} =$ 2.000 biztanle baliokidetik gorako hiri-aglomerazioei dagokien karga kutsatzailea $t$ urtean</p>
 
 <p><br /></p>
 
-<p><b>Proportion of domestic wastewater flows connected to a collection systemc</b></p>
+<p><b>Kolektore-sistema batera konektatutako etxeko hondakin-uren fluxuen proportzioa</b></p>
 
-\[PCC_{\text{collectors}}^{t} =
-  \left( \frac{CC_{\text{collectors}}^{t}}{CC^{t}} \cdot 100 \right)\]
+\[PCC_{\text{kolektoreak}}^{t} =
+  \left( \frac{CC_{\text{kolektoreak}}^{t}}{CC^{t}} \cdot 100 \right)\]
 
-<p>where:</p>
+<p>non:</p>
 
-<p>$CC_{\text{collectors}}^{t} =$ pollution load corresponding to urban agglomerations 
-with more than 2,000 population equivalents connected to a conduit system that collects 
-and conveys their wastewater to a treatment facility or final discharge point $t$</p>
+<p>$CC_{\text{kolektoreak}}^{t} =$ 2.000 biztanletik gorako hiri-aglomerazioei dagokien karga kutsatzailea, 
+hondakin-uren kolektore-sistema bati konektatuta $t$ urtean</p>
 
-<p>$CC^{t} =$ pollution load corresponding to urban agglomerations with more than 2,000 
-population equivalents in year $t$</p>
+<p>$CC^{t} =$ 2.000 biztanle baliokidetik gorako hiri-aglomerazioei dagokien karga kutsatzailea $t$ urtean</p>
 
           
         </td>
@@ -741,20 +735,18 @@ population equivalents in year $t$</p>
         <td>
           
             
-<p>The pollution load of an urban agglomeration is measured in equivalent inhabitants, 
-with an equivalent inhabitant defined as the biodegradable organic load with a five-day 
-biochemical oxygen demand of 60 grams of oxygen per day. An equivalent inhabitant 
-represents the biodegradable organic load generated by one person in one day in a typical home.</p>
+<p>Hiri-aglomerazio baten karga kutsatzailea biztanle baliokideetan neurtzen da, eta biztanle baliokide bat 
+honela definitzen da: karga organiko biodegradagarria, eguneko 60 gramo oxigenoko bost eguneko oxigeno-eskari 
+biokimikoarekin. Biztanle baliokide bat pertsona batek etxebizitza arrunt batean egun batean sortzen duen 
+karga organiko biodegradagarria da.</p>
 
-<p>It should be noted that the pollution load of an urban agglomeration not only includes 
-pollution due to human excrement, but also pollution from premises used for commercial<br />
-or industrial activities, provided that it is biodegradable organic. Therefore, the number 
-of equivalent inhabitants of an urban agglomeration is always greater than its actual number 
-of inhabitants.</p>
+<p>Kontuan izan behar da hiri-aglomerazio baten karga kutsatzaileak ez duela soilik giza iraizteek eragindako 
+kutsadura hartzen, baita merkataritza- edo industria-jarduera bat egiteko erabiltzen diren lokalek eragindako 
+kutsadura ere, betiere izaera organiko biodegradagarria badu. Beraz, hiri-aglomerazio bateko biztanle 
+baliokideen kopurua beti da benetako biztanle-kopurua baino handiagoa.</p>
 
-<p>This indicator only takes into account urban agglomerations with more than 2,000 population 
-equivalents, in accordance with Articles 3 and 4 of Directive 91/271/EEC on urban wastewater 
-treatment.</p>
+<p>Adierazle honek 2.000 biztanletik gorako hiri-aglomerazioak bakarrik hartzen ditu kontuan, hiriko hondakin-uren 
+tratamenduari buruzko 91/271/EEE Zuzentarauaren 3. eta 4. artikuluekin bat etorriz.</p>
 
           
         </td>
@@ -858,7 +850,7 @@ treatment.</p>
         <th scope="row">Azken aldiz eguneratutako metadatuak </th>
         <td>
           
-            Apr 02, 2025
+            Oct 29, 2024
           
         </td>
         </tr>
@@ -910,28 +902,32 @@ treatment.</p>
         <td>
           
             
-<p>Wastewater data are crucial to promote strategies for sustainable and safe wastewater 
-use or reuse to the benefit of the world’s population health and the global environment, 
-but also to respond to growing water demands, increasing water pollution loads, and climate 
-change impacts on water resources.</p>
+<p>Los datos sobre aguas residuales son cruciales para promover estrategias de uso sostenible y 
+seguro de las aguas residuales o su reutilización en beneficio de la salud de la población 
+mundial y el medio ambiente global, pero también para responder a las crecientes demandas 
+de agua, el aumento de las cargas de contaminación del agua y los impactos del cambio 
+climático en los recursos hídricos.</p>
 
-<p>Sustainable Development Goal 6 (SDG 6) is about ensuring the availability and sustainability 
-of water and sanitation for all by 2030. SDG Target 6.3 sets out to improve ambient water 
-quality, which is essential to protecting both ecosystem and human health, by eliminating, 
-minimizing and significantly reducing different streams of pollution into water bodies.</p>
+<p>El Objetivo de Desarrollo Sostenible 6 (ODS 6) trata de garantizar la disponibilidad 
+y sostenibilidad del agua y el saneamiento para todos para 2030. La meta 6.3 de los 
+ODS se propone mejorar la calidad del agua ambiental, que es esencial para proteger 
+tanto los ecosistemas como la salud humana, eliminando, minimizando y reduciendo s
+ignificativamente las diferentes corrientes de contaminación en los cuerpos de agua.</p>
 
-<p>The purpose of monitoring progress using SDG indicator 6.3.1 is to provide necessary and timely 
-information to decision makers and stakeholders to make informed decisions to accelerate progress 
-towards reducing water pollution, minimizing release of hazardous chemicals and increasing wastewater 
-treatment and reuse.</p>
+<p>El propósito de monitorear el progreso utilizando el indicador 6.3.1 de los ODS es proporcionar 
+la información necesaria y oportuna a los tomadores de decisiones y las partes interesadas 
+para que tomen decisiones informadas para acelerar el progreso hacia la reducción de la 
+contaminación del agua, minimizando la liberación de productos químicos peligrosos y 
+aumentando el tratamiento y la reutilización de las aguas residuales.</p>
 
-<p>The target wording covers wastewater recycling and safe reuse with implication on water use efficiency, 
-although it is not fully addressed by the global indicator and methodology. SDG indicator 6.3.1 tracks 
-the proportion of wastewater flows from households, services and industrial economic activities that 
-are safely treated at the source or through centralized wastewater treatment plants before being discharged 
-into the environment, out of the total volume of wastewater generated.</p>
+<p>La redacción de la meta cubre el reciclaje de aguas residuales y la reutilización segura con 
+implicancias en la eficiencia del uso del agua, aunque no se aborda completamente en el indicador 
+y la metodología globales. El indicador 6.3.1 de los ODS rastrea la proporción de flujos de 
+aguas residuales de hogares, servicios y actividades económicas industriales que son tratados 
+de manera segura en la fuente o mediante plantas centralizadas de tratamiento de aguas residuales 
+antes de ser descargados al medio ambiente, del volumen total de aguas residuales generadas.</p>
 
-<p>Source: United Nations Statistics Division</p>
+<p>Fuente: División de Estadísticas de las Naciones Unidas</p>
 
           
         </td>
@@ -947,7 +943,7 @@ into the environment, out of the total volume of wastewater generated.</p>
         <th scope="row">Eskuragarri dagoen adierazlearen eta NBE adierazlearen arteko konparagarritasuna </th>
         <td>
           
-            <p>The available indicator does not comply with United Nations metadata but provides similar information.</p>
+            <p>Eskuragarri dagoen adierazleak ez ditu betetzen Nazio Batuen adierazlearen metadatuak, baina antzeko informazioa ematen du.</p>
 
           
         </td>
@@ -973,7 +969,7 @@ into the environment, out of the total volume of wastewater generated.</p>
         <th scope="row">NBEko metadatuetarako esteka </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-06-03-01.pdf">Metadata 6-3-1.pdf</a></p>
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-06-03-01.pdf">Metadatuak 6-3-1.pdf</a> (ingelesez bakarrik)</p>
 
           
         </td>
@@ -1128,7 +1124,7 @@ into the environment, out of the total volume of wastewater generated.</p>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
+<script src='/site/assets/js/sdg.js?v=20250407125706'></script>
 
 
 <script>
@@ -1148,7 +1144,7 @@ into the environment, out of the total volume of wastewater generated.</p>
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407125706"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
