@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250403065408">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -481,13 +481,11 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definizioa </th>
         <td>
           
-            
-<p>Gross Value Added (VAB) of agriculture, livestock and fishing with respect to the GVA 
-of the total sectors, at current prices.</p>
+            <p>Nekazaritza, abeltzaintza eta arrantza sektorearen balio erantsi gordina (BEG) sektore guztien BEGarekiko, 
+uneko prezioetan.</p>
 
-<p>Agricultural value added and GDP are based on the European System of Accounts (ESA-2010). 
-Agriculture refers to the agriculture, forestry, fishing, and hunting sectors (Section A of 
-the CNAE 2009 or ISIC Rev4).</p>
+<p>Nekazaritzako balio agregatua eta BPG Europako Kontu Sisteman (KSE-2010) oinarritzen dira. Nekazaritza 
+nekazaritza, basogintza, arrantza eta ehizaren sektoreari dagokio (EJSNren A atala 2009 edo CIIU Ber4)</p>
 
           
         </td>
@@ -504,13 +502,13 @@ the CNAE 2009 or ISIC Rev4).</p>
         <td>
           
             
-\[PVAB_{agriculture}^{t} = \frac{VAB_{agriculture}^{t}}{PIB^{t}} \cdot 100\]
+\[PVAB_{nekazaritza}^{t} = \frac{VAB_{nekazaritza}^{t}}{PIB^{t}} \cdot 100\]
 
-<p>where:</p>
+<p>non:</p>
 
-<p>$VAB_{agriculture}^{t} =$ gross added value of the agriculture, livestock and fishing sector at current prices in the year $t$</p>
+<p>$VAB_{nekazaritza}^{t} =$ nekazaritza, abeltzaintza eta arrantza sektorearen balio erantsi gordina, prezio arruntetan $t$ urtean</p>
 
-<p>$PIB^{t} =$ gross domestic product at current prices in the year $t$</p>
+<p>$PIB^{t} =$  barne-produktu gordina, prezio arruntetan $t$ urtean</p>
 
           
         </td>
@@ -526,7 +524,7 @@ the CNAE 2009 or ISIC Rev4).</p>
         <th scope="row">Eskuragarri dauden desagregazioak </th>
         <td>
           
-            <p>Province/County/Municipality</p>
+            <p>Lurralde historikoa/Eskualdea/Udalerria</p>
 
           
         </td>
@@ -558,7 +556,7 @@ the CNAE 2009 or ISIC Rev4).</p>
         <th scope="row">Oharra </th>
         <td>
           
-            <p>The data published in the Municipal GDP are compiled using estimates based on the methodology established in the European System of Accounts (ESA-2010).</p>
+            <p>Udal BPGan zabaldutako datuak Kontuen Europako Sisteman (KSE-2010) ezarritako metodologian oinarrituta egindako zenbatespenen bidez egiten dira.</p>
 
           
         </td>
@@ -651,7 +649,7 @@ the CNAE 2009 or ISIC Rev4).</p>
         <th scope="row">Azken aldiz eguneratutako metadatuak </th>
         <td>
           
-            Mar 28, 2025
+            Jul 29, 2024
           
         </td>
         </tr>
@@ -702,33 +700,30 @@ the CNAE 2009 or ISIC Rev4).</p>
         <th scope="row">Justifikazioa </th>
         <td>
           
-            
-<p>An Agriculture Orientation Index (AOI) greater than 1 reflects a higher orientation towards the agriculture 
-sector, which receives a higher share of government spending relative to its contribution to economic 
-value-added.</p>
+            <p>1 baino gehiagoko nekazaritza-orientazioko indizeak (IH) nekazaritza-sektorerako joera handiagoa erakusten 
+du, gastu publikoaren proportzio handiagoa jasotzen baitu balio erantsi ekonomikoari egiten dion ekarpenari 
+dagokionez.</p>
 
-<p>An AOI less than 1 reflects a lower orientation to agriculture, while an AOI equal to 1 
-reflects neutrality in a government’s orientation to the agriculture sector.</p>
+<p>1etik beherako IHk nekazaritzarako joera txikiagoa duela adierazten du, eta 1etik beherako IHk, berriz, 
+neutraltasuna adierazten du gobernu bat nekazaritza-sektorera bideratzean. Nekazaritzan egindako gastu 
+publikoak honako hauek hartzen ditu barnean: politika eta programa sektorialetako gastua; lurzoruaren 
+hobekuntza eta lurzoruaren degradazioaren kontrola; nekazaritzarako ureztaketa eta urtegiak; animalien 
+osasunaren kudeaketa, abeltzaintzaren ikerketa eta animalien hazkuntzarako gaikuntza; itsasoko eta ur 
+gezako ikerketa biologikoa; baso-landaketa eta beste baso-proiektu batzuk; eta abar.</p>
 
-<p>Government spending in agriculture includes spending on sector policies and programs; soil improvement 
-and soil degradation control; irrigation and reservoirs for agricultural use; animal health management, 
-livestock research and training in animal husbandry; marine/freshwater biological research; afforestation 
-and other forestry projects; etc.</p>
+<p>Nekazaritza-jarduera horietan egindako gastuak sektorearen eraginkortasuna, produktibitatea eta diru-sarreren 
+hazkundea handitzen laguntzen du, kapital fisikoa edo giza kapitala handitzen delako eta/edo denboraz kanpoko 
+aurrekontu-murrizketak murrizten direlako.</p>
 
-<p>Spending in these agricultural activities helps to increase sector efficiency, productivity and income 
-growth by increasing physical or human capital and/or reducing inter-temporal budget constraints.</p>
+<p>Hala ere, sektore pribatuak normalean gutxi inbertitzen du jarduera horietan, merkatuaren failak direla eta 
+(adibidez, ikerketaren eta garapenaren ondasun publikoaren izaera; lurzoruaren eta uraren baldintza hobetuen 
+kanpo-efektu positiboak; lehiakortasun-krediturik ez izatea, ekoizleen eta finantza-erakundeen arteko informazio 
+asimetrikoa dela eta, eta abar).</p>
 
-<p>However, the private sector typically under-invests in these activities due to the presence of market 
-failure (e.g. the public good nature of research and development; the positive externalities from 
-improved soil and water conditions; lack of access to competitive credit due to asymmetric information 
-between producers and financial institutions, etc.).</p>
-
-<p>Similarly, the high risk faced by agricultural producers, particular smallholders unable to hedge 
-against risk, often requires government intervention in terms of income redistribution to support 
-smallholders in distress following crop failures and livestock loss from pests, droughts, floods, 
-infrastructure failure, or severe price changes.</p>
-
-<p>Source: United Nations Statistics Division</p>
+<p>Era berean, nekazaritzako ekoizleek, bereziki arriskutik babestu ezin diren nekazari txikiek, aurre egin behar 
+dieten arrisku handiak, askotan, gobernuaren esku-hartzea eskatzen du diru-sarreren birbanaketari dagokionez, 
+laborari txikiei laguntzeko zailtasunetan, izurriteen, lehorteen, uholdeen, azpiegitura-failen edo prezio-aldaketa 
+larrien ondorioz uzta eta ganadua galdu ondoren.</p>
 
           
         </td>
@@ -744,7 +739,7 @@ infrastructure failure, or severe price changes.</p>
         <th scope="row">Eskuragarri dagoen adierazlearen eta NBE adierazlearen arteko konparagarritasuna </th>
         <td>
           
-            <p>The available indicator is one of the series of the United Nations indicator, but it is not the main indicator.</p>
+            <p>Eskuragarri dagoen adierazlea Nazio Batuen adierazlearen serieetako bat da, baina ez da adierazle nagusia.</p>
 
           
         </td>
@@ -760,7 +755,7 @@ infrastructure failure, or severe price changes.</p>
         <th scope="row">Nazioarteko emaitzak </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=2.a.1&amp;seriesCode=AG_PRD_AGVAS&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=Total">Agricultural value added as a percentage of GDP (%) AG_PRD_AGVAS</a> UNSTATS</p>
+            <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=2.a.1&amp;seriesCode=AG_PRD_AGVAS&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=Total">Nekazaritzaren balio erantsia BPGren ehuneko gisa (%) AG_PRD_AGVAS</a> UNSTATS</p>
 
           
         </td>
@@ -781,7 +776,7 @@ infrastructure failure, or severe price changes.</p>
         <th scope="row">NBEko metadatuetarako esteka </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-02-0A-01.pdf">Metadata 2-a-1.pdf</a></p>
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-02-0A-01.pdf">Metadatuak 2-a-1.pdf</a> (ingelesez bakarrik)</p>
 
           
         </td>
@@ -869,7 +864,7 @@ infrastructure failure, or severe price changes.</p>
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250403065408'></script>
+<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
 
 
 <script>
@@ -889,7 +884,7 @@ infrastructure failure, or severe price changes.</p>
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250403065408"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

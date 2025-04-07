@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250403065408">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250407090629">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -643,11 +643,9 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definizioa </th>
         <td>
           
-            
-<p>Proportion of public administration spending in the Basque Country dedicated 
-to essential services: education, health, and social protection (functional groups 09, 
-07, and 10 of the Classification of Government Functions (COFOG), used internationally to 
-classify the purposes of government activities)</p>
+            <p>Funtsezko zerbitzuetara (hezkuntza, osasuna eta gizarte-babesa) bideratzen den Euskal AEko 
+herri-administrazioen gastuaren proportzioa (Jaurlaritzaren Funtzioen Sailkapeneko 09, 
+07 eta 10 funtzio-taldeak, gobernu-jardueren helburuak sailkatzeko nazioartean erabiltzen direnak)</p>
 
           
         </td>
@@ -668,15 +666,15 @@ classify the purposes of government activities)</p>
 
 <p>donde:</p>
 
-<p>$PE_{t}$ = Government expenditure on essential services (education, health, and social protection) as a percentage of total government expenditure in the fiscal year $t$</p>
+<p>$PE_{t}$ = gobernuaren gastua funtsezko zerbitzuetan (hezkuntza, osasuna eta gizarte-babesa), fiskaleko gobernuaren gastu osoaren ehuneko gisa, $t$ urtean</p>
 
-<p>$TE_{t}$ = total government expenditure on education in the fiscal year $t$</p>
+<p>$TE_{t}$ = gobernuak hezkuntzan egiten duen guztizko gastua, $t$ urte fiskalean</p>
 
-<p>$TH_{t}$ = total government expenditure on health in the fiscal year $t$</p>
+<p>$TH_{t}$ = gobernuak osasunean egiten duen guztizko gastua, $t$ urte fiskalean</p>
 
-<p>$TS_{t}$ = total government expenditure on social protection in the fiscal year $t$</p>
+<p>$TS_{t}$ = gobernuak gizarte-babesean egiten duen guztizko gastua, $t$ urte fiskalean</p>
 
-<p>$TG_{t}$ = total government expenditure in the fiscal year $t$</p>
+<p>$TG_{t}$ = gobernuaren guztizko gastua, $t$ urte fiskalean</p>
 
           
         </td>
@@ -692,7 +690,7 @@ classify the purposes of government activities)</p>
         <th scope="row">Eskuragarri dauden desagregazioak </th>
         <td>
           
-            <p>Essential services: education, health, social protection</p>
+            <p>Funtsezko zerbitzuak: hezkuntza, osasuna, gizarte-babesa</p>
 
           
         </td>
@@ -725,23 +723,24 @@ classify the purposes of government activities)</p>
         <td>
           
             
-<p>The indicator is calculated for the general government, which includes 
-different governmental units: central government, regional government, regional governments, 
-and local governments.</p>
+<p>Adierazlea gobernu orokorrerako kalkulatzen da, gobernu-unitate desberdinak barne hartzen dituena: 
+gobernu zentrala, gobernu autonomikoa, foru gobernuak eta tokiko gobernuak.</p>
 
-<p>The Classification of Functions of Government (COFOG), developed by the Organization for Economic Cooperation and Development (OECD) and published by the United Nations Statistics Division, structures public expenditure into 10 functional groups:</p>
+<p>Gobernuaren Funtzioen Sailkapenak (COFOG), Ekonomia Lankidetza eta Garapenerako Erakundeak (ELGA) 
+garatu eta Nazio Batuen Estatistika Atalak argitaratutakoak, gastu publikoa 10 talde funtzionaletan 
+egituratzen du:</p>
 
 <ul>
-  <li>01 General public services</li>
-  <li>02 Defence</li>
-  <li>03 Public order and safety</li>
-  <li>04 Economic affairs</li>
-  <li>05 Environmental protection</li>
-  <li>06 Housing and community services</li>
-  <li>07 Health</li>
-  <li>08 Leisure, culture and religion</li>
-  <li>09 Education</li>
-  <li>10 Social Protection</li>
+  <li>01 Zerbitzu publiko orokorrak</li>
+  <li>02 Defentsa</li>
+  <li>03 Ordena publikoa eta segurtasuna</li>
+  <li>04 Gai ekonomikoak</li>
+  <li>05 Ingurumena babestea</li>
+  <li>06 Etxebizitza eta zerbitzu komunitarioak</li>
+  <li>07 Osasuna</li>
+  <li>08 Aisia, kultura eta erlijioa</li>
+  <li>09 Hezkuntza</li>
+  <li>10 Gizarte-babesa</li>
 </ul>
 
           
@@ -820,18 +819,8 @@ and local governments.</p>
       
       
       
-      
-      <tr>
-        <th scope="row">Azken aldiz eguneratutako metadatuak </th>
-        <td>
-          
-            Mar 28, 2025
-          
-        </td>
-        </tr>
         
-      
-  
+          
   </tbody>
 </table>
 
@@ -876,24 +865,24 @@ and local governments.</p>
         <th scope="row">Justifikazioa </th>
         <td>
           
-            <p>The indicator is used to assess government’s expenditure on essential services 
-(education, health and social protection) relative to the amount of total government 
-spending. Since it comes from an international framework, the GFSM 2014, it provides 
-analysts with a cross-country comparable dataset and ensures establishing robust 
-analytical findings to support SDG monitoring using fiscal data.</p>
+            <p>Adierazlea gobernuak funtsezko zerbitzuetan (hezkuntza, osasuna eta gizarte-babesa) 
+egindako gastua ebaluatzeko erabiltzen da, gobernuaren guztizko gastuaren zenbatekoari 
+dagokionez. Nazioarteko esparru batetik datorrenez, Finantza Publikoen Estatistiken 
+Eskuliburuak (FPEE 2014) herrialdeen arteko datu alderagarriak ematen dizkie analistei, 
+eta GJHen jarraipena datu fiskalak erabiliz egiteko ondorio analitiko sendoak ezartzea 
+bermatzen du.</p>
 
-<p>A high proportion of government expenditure on essential services (education, health and social
-protection) demonstrates a high government priority for these functions of spending.</p>
+<p>Funtsezko zerbitzuetako (hezkuntza, osasuna eta gizarte-babesa) gastu publikoaren proportzio 
+handi batek erakusten du gobernuak lehentasun handia duela gastu-funtzio horietarako.</p>
 
-<p>For reporting this indicator, general government is considered the most appropriate 
-level of institutional coverage as it will encompass relevant government units, 
-including local governments, since in many countries descentralization of these 
-categories of expense are to be considered. A country may have one central 
-government; several state, provincial, or regional governments; and many local 
-governments, and the GFSM 2014 recommends that statistics should be compiled for all 
-such general government units.</p>
+<p>Adierazle horren berri emateko, uste da gobernu orokorra dela estaldura instituzionalaren 
+mailarik egokiena; izan ere, dagozkion gobernu-unitateak hartuko ditu, tokiko gobernuak barne, 
+herrialde askotan kontuan hartu behar baita gastu-kategoria horien deszentralizazioa. Herrialde 
+batek gobernu zentral bat izan dezake; estatuetako, probintzietako edo eskualdeetako hainbat 
+gobernu; eta tokiko gobernu asko, eta MEFP 2014k gomendatzen du estatistikak biltzea gobernu 
+orokorreko unitate horietarako guztietarako.</p>
 
-<p>Source: United Nations Statistics Division</p>
+<p>Iturria: Nazio Batuen Estatistika Dibisioa</p>
 
           
         </td>
@@ -909,7 +898,7 @@ such general government units.</p>
         <th scope="row">Eskuragarri dagoen adierazlearen eta NBE adierazlearen arteko konparagarritasuna </th>
         <td>
           
-            <p>The indicator available in the Basque Country uses the COFOG classification, which does not  comply with the metadata of the United Nations indicator but provides similar information.  The global indicator uses the Manual of Government Finance Statistics (GFSM), where the concept  of expenditure is applied slightly differently.</p>
+            <p>Euskal Autonomia Erkidegoan eskuragarri dagoen adierazleak COFOG sailkapena erabiltzen du.  Sailkapen horrek ez ditu betetzen Nazio Batuen adierazlearen metadatuak, baina antzeko  informazioa ematen du. Munduko adierazleak gobernu finantzen estatistiken eskuliburua  (GFEE) erabiltzen du, non gastuaren kontzeptua pixka bat desberdin aplikatzen den.</p>
 
           
         </td>
@@ -926,16 +915,16 @@ such general government units.</p>
         <td>
           
             <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=1.a.2&amp;seriesCode=SG_XPD_ESSRV&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=Total">
-Proportion of total public expenditure on essential services (%) SG_XPD_ESSRV</a> UNSTATS</p>
+Funtsezko zerbitzuetako guztizko gastu publikoaren proportzioa (%) SG_XPD_ESSRV</a> UNSTATS</p>
 
 <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=1.a.2&amp;seriesCode=SG_XPD_PROT&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=Total">
-Proportion of total public expenditure on essential services, social protection (%) SG_XPD_PROT</a> UNSTATS</p>
+Funtsezko zerbitzuetako guztizko gastu publikoaren proportzioa, gizarte-babesa (%) SG_XPD_PROT</a> UNSTATS</p>
 
 <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=1.a.2&amp;seriesCode=SG_XPD_EDUC&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=Total">
-Proportion of total public expenditure on essential services, education (%) SG_XPD_EDUC</a> UNSTATS</p>
+Funtsezko zerbitzuetako guztizko gastu publikoaren proportzioa, hezkuntza (%) SG_XPD_EDUC</a> UNSTATS</p>
 
 <p><a href="https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=1.a.2&amp;seriesCode=SG_XPD_HLTH&amp;areaCode=276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&amp;period=3&amp;table=Total">
-Proportion of total public expenditure on essential services, health (%) SG_XPD_HLTH</a> UNSTATS</p>
+Funtsezko zerbitzuetako guztizko gastu publikoaren proportzioa, osasuna (%) SG_XPD_HLTH</a> UNSTATS</p>
 
           
         </td>
@@ -956,9 +945,9 @@ Proportion of total public expenditure on essential services, health (%) SG_XPD_
         <th scope="row">NBEko metadatuetarako esteka </th>
         <td>
           
-            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-0a-02a.pdf">Metadata 1-a-2 (1).pdf</a></p>
+            <p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-0a-02a.pdf">Metadatuak 1-a-2 (1).pdf</a> (ingelesez bakarrik)</p>
 
-<p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-0a-02b.pdf">Metadata 1-a-2 (2).pdf</a></p>
+<p><a href="https://unstats.un.org/sdgs/metadata/files/Metadata-01-0a-02b.pdf">Metadatuak 1-a-2 (2).pdf</a> (ingelesez bakarrik)</p>
 
           
         </td>
@@ -1113,7 +1102,7 @@ Proportion of total public expenditure on essential services, health (%) SG_XPD_
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Bilatu';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250403065408'></script>
+<script src='/site/assets/js/sdg.js?v=20250407090629'></script>
 
 
 <script>
@@ -1133,7 +1122,7 @@ Proportion of total public expenditure on essential services, health (%) SG_XPD_
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250403065408"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250407090629"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
