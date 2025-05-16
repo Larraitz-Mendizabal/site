@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250515065122">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250516065051">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -506,36 +506,180 @@ data-event-label="high"
     }
 
     // Set values according to this site's configuration.
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_disponible', "global_indicators.17-13-1-title");
+        var propertyEditor = editor.getEditor('root.indicador_disponible');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_disponible');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_disponible'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_onu_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('meta_global', "meta_largo.17-13-titulo");
+        var propertyEditor = editor.getEditor('root.meta_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: meta_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.meta_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('objetivo_global', "objetivo_largo.17-titulo");
+        var propertyEditor = editor.getEditor('root.objetivo_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: objetivo_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.objetivo_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('definicion', "Macroeconomic panel that includes important macroeconomic indicators covering the external, financial, fiscal and real sectors: \n - Year-on-year rate of change in real GDP \n - Unemployment rate \n - Year-on-year rate of change in the consumer price index \n - Volume of remittances sent abroad as a proportion of GDP \n - Gross debt of autonomous public administrations according to the excessive deficit protocol as a proportion of GDP \n - Tax revenues of autonomous public administrations as a proportion of GDP \n - Fiscal balance of autonomous public administrations as a proportion of GDP \n");
+        var propertyEditor = editor.getEditor('root.definicion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: definicion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.definicion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('formula', "\n<b>Year-on-year rate of change in real GDP</b>\n\n$$TVPIB^{t} = \\left(\\frac{PIB_{2022}^{t}}{PIB_{2022}^{t-1}} - 1 \\right) \\cdot 100$$ \n\nwhere: \n\n$PIB_{2022}^{t} =$ gross domestic product in chained volume with reference to 2022 in year $t$ \n\n$PIB_{2022}^{t-1} =$ gross domestic product in chained volume with reference to 2022 in year $t-1$ \n\n<br>\n\n<b>Unemployment rate</b>\n\n$$TD^{t} = \\frac{D^{t}}{A^{t}}  \\cdot 100$$ \n\nwhere: \n\n$D^{t} =$ unemployed people in year $t$ \n\n$A^{t} =$ economically active people in year $t$, taking into account that each of these populations is calculated as the arithmetic mean of the four quarters of the year \n\n<br>\n\n<b>Year-on-year rate of change in the consumer price index</b>\n\n$$TVIPC^{t} = \\left(\\frac{IPC^{t}}{IPC^{t-1}} - 1 \\right) \\cdot 100$$ \n\nwhere:\n\n$IPC^{t} =$ consumer price index in year $t$ \n\n$IPC^{t-1} =$ consumer price index in year $t-1$, taking into account that the annual consumer price indices are calculated as the arithmetic mean of the monthly consumer price indices \n\n<br>\n\n<b>Volume of remittances sent abroad as a proportion of GDP</b>\n\n$VR^{t} =$ volume of remittances sent abroad in year $t$  \n\n$PIB^{t} =$ gross domestic product at current prices in year $t$ \n\nIf we denote: \n\n$VR_{Spain,c}^{t} =$ volume of remittances sent from Spain to country $c$ in year $t$ \n\n$P_{16-64,Spain,c}^{t} =$ foreign population between 16 and 64 years of age from the country $c$ residing in Spain as of 1 January of year $t$ \n\n$P_{16-64,c}^{t} =$ foreign population between 16 and 64 years of age from the country $c$ resident in the autonomous community as of January 1 of year $t$ \n\nThen:  \n\n$$ VR^{t} = \\displaystyle \\sum_{p \\epsilon Countries} VR_{Spain,c}^{t} = \\frac{\\frac{P_{16-64,c}^{t}+P_{16-64,c}^{t+1}}{2}}{\\frac{P_{16-64,Spain,c}^{t}+P_{16-64,Spain,c}^{t+1}}{2}} $$ \n\nCountries are: Colombia, Morocco, Ecuador, the Dominican Republic, Honduras, Bolivia, Senegal, Paraguay, Pakistan, Romania, and other countries. Countries belonging to the European Union are not included in \"other countries\". \n\n<br>\n\n<b>Gross debt of autonomous public administrations according to the excessive deficit protocol as a proportion of GDP</b>\n\n$$PPIBDBPDE^{t} = \\frac{DBPDE^{t}}{PIB^{t}} \\cdot 100$$ \n\nwhere: \n\n$DBPDE^{t} =$ gross public debt according to the excessive deficit protocol in year $t$ \n\n$PIB^{t} =$ gross domestic product at current prices in year $t$ \n\n<br>\n\n<b>Tax revenues of autonomous public administrations as a proportion of GDP</b>\n\n$$PPIBIF^{t} = \\frac{D.211^{t} + D.212^{t} + D.214^{t} + D.29^{t} + D.51^{t} + D.59^{t} + D.91^{t} + D.611^{t} + D.613^{t}}{PIB^{t}} \\cdot 100$$ \n\nwhere:\n\n - $D.211^{t} =$ value-added taxes (VAT) in year $t$ \n - $D.212^{t} =$ taxes and duties on imports excluding VAT in year $t$ \n - $D.214^{t} =$ taxes on products excluding VAT and imports in year $t$ \n - $D.29^{t} =$ other taxes on production in year $t$ \n - $D.51^{t} =$ income taxes in year $t$ \n - $D.59^{t} =$ other current taxes in year $t$ \n - $D.91^{t} =$ capital taxes in year $t$ \n - $D.611^{t} =$ effective social contributions paid by employers in year $t$ \n - $D.613^{t} =$ effective social contributions paid by households in year $t$ \n\n$PIB^{t} =$ gross domestic product at current prices in year $t$ \n\n<br>\n\n<b>Fiscal balance of autonomous public administrations as a proportion of GDP</b>\n\n$$PPIBSF^{t} = \\frac{SF^{t}}{PIB^{t}} \\cdot 100$$ \n\nwhere:\n\n$SF^{t} =$ fiscal balance (capacity or need for financing) of autonomous public administrations as a proportion of GDP in year $t$ \n\n$PIB^{t} =$ gross domestic product at current prices in year $t$ \n");
+        var propertyEditor = editor.getEditor('root.formula');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: formula');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.formula'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('desagregacion', "Province\n");
+        var propertyEditor = editor.getEditor('root.desagregacion');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: desagregacion');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.desagregacion'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('periodicidad', "FUENTE.FREQ_A");
+        var propertyEditor = editor.getEditor('root.periodicidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: periodicidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.periodicidad'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.observaciones'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('texto_oceca', "FUENTE.oceca");
+        var propertyEditor = editor.getEditor('root.texto_oceca');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: texto_oceca');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.texto_oceca'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.descripcion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('justificacion_global', "\n1. External sector: Indicators for the current and capital & financial accounts are included \nto monitor each country's trade and balance of payments. The sustainability of the balance of \npayments depends on both the current account and the capital and financial account balances, \nincluding foreign reserves. \n\n2. Fiscal sector: For a sustainable economic growth path, a country needs a sustainable fiscal \npolicy. The dashboard monitors government revenues, fiscal balance, and public debt as a share \nof GDP to inform policy-decision making. \n\n3. Real sector: GDP measures the nation's total output of goods and services. For many decades, \nit has been a comprehensive measure of market activity used for a wide variety of analytical \npurposes such as measuring productivity, conducting monetary policy, and projecting tax revenues. \nIn this section, we monitor growth trends of GDP; Gross capital formation; Exports of goods and \nservices; Imports of goods and services; Household consumption; Government consumption; and \nConsumer Price Index to monitor the price trends. \n\n4. Financial sector: Financial sector indicators are essential for measuring countries' financial \nmarket stability and economic stability. Stronger financial institutions play a significant role \nin a country's economic performance. \n\n5. Unenmployment: Trends in unemployment rate data are a vital indicator for analyzing the long-term \neconomic development of a country (SDG 8.5.2). Stronger and sustainable economic growth often results \nin lower unemployment rates. \n\nSource: United Nations Statistics Division \n");
+        var propertyEditor = editor.getEditor('root.justificacion_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: justificacion_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.justificacion_global'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('comparabilidad', "The available indicator partially complies with the United Nations metadata.");
+        var propertyEditor = editor.getEditor('root.comparabilidad');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: comparabilidad');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.comparabilidad'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('dato_global', "\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=17.13.1&seriesCode=NY_GDP_MKTP_KD_ZG&areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\">Annual GDP growth  (%) NY_GDP_MKTP_KD_ZG</a> UNSTATS\n\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=17.13.1&seriesCode=FP_CPI_TOTL_ZG&areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\">Annual inflation, consumer prices (%) FP_CPI_TOTL_ZG</a> UNSTATS\n\n<a href=\"https://unstats.un.org/sdgs/dataportal/analytics/SingleSeries?indicators=17.13.1&seriesCode=GC_BAL_CASH_GD_ZS&areaCode=  276,40,56,100,196,191,208,703,705,724,233,246,250,300,528,348,372,380,428,440,442,470,616,620,203,642,752,1,202,14,17,18,11,747,15,145,62,143,34,753,30,35,419,29,13,5,9,54,57,61,53,513,150,21,432,199,722&period=3&table=Total\">Cash surplus/deficit as a proportion of GDP (%) GC_BAL_CASH_GD_ZS</a> UNSTATS\n");
+        var propertyEditor = editor.getEditor('root.dato_global');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: dato_global');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_global'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.dato_ccaa'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicador_meta_enlace', "<a href=\"https://unstats.un.org/sdgs/metadata/files/Metadata-17-13-01.pdf\">Metadata 17-13-1.pdf</a>");
+        var propertyEditor = editor.getEditor('root.indicador_meta_enlace');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicador_meta_enlace');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicador_meta_enlace'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.informacion_interes'));
@@ -560,8 +704,32 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_data_updated_date', "");
+        var propertyEditor = editor.getEditor('root.national_data_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_data_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_updated_date'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-05-16");
+        var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_metadata_updated_date');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_updated_date'));
 
     
@@ -700,7 +868,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250515065122'></script>
+<script src='/site/assets/js/sdg.js?v=20250516065051'></script>
 
 
 <script>
@@ -720,7 +888,7 @@ data-event-label="high"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250515065122"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250516065051"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

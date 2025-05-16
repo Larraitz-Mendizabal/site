@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250515065122">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250516065051">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -552,7 +552,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('definicion', "Ammonia emissions ($NH_3$) from agriculture and livestock");
+        var currentValue = normalizeCurrentValue('definicion', "\nAvailable series: \n\n<b> - Ammonia (NH3) emissions from agriculture and livestock</b>\n\n<b> - Ammonia (NH3) emissions from agriculture and livestock per hectare:</b> \nAmmonia (NH3) emissions from agriculture and livestock farming per hectare of cropland, meadows and pastures \n");
         var propertyEditor = editor.getEditor('root.definicion');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -566,7 +566,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('formula', "\n$$ENH3_{agriculture\\, y\\, livestock}^{t} = ENH3_{agriculture}^{t} + ENH3_{livestock}^{t}$$\n\nwhere: \n\n$ENH3_{agriculture}^{t}$ $NH_3$ emmisions from agriculture in the year $t$\n\n$ENH3_{livestock}^{t}$ $NH_3$ emmisions from livestock in the year $t$\n");
+        var currentValue = normalizeCurrentValue('formula', "\n<b> Ammonia (NH3) emissions from agriculture and livestock</b>\n\n$$ENH3_{agriculture\\, and\\, livestock}^{t} = ENH3_{agriculture}^{t} + ENH3_{livestock}^{t}$$\n\nwhere: \n\n$ENH3_{agriculture}^{t}$ = NH3 emmisions from agriculture in the year $t$ \n\n$ENH3_{livestock}^{t}$ = NH3 emmisions from livestock in the year $t$ \n\n<br>\n\n<b>Ammonia (NH3) emissions from agriculture and livestock per hectare</b>\n\n$$ENH3S_{agriculture\\, and\\, livestock}^{t} = \\frac{ENH3_{agriculture}^{t} + ENH3_{livestock}^{t}}{S_{cropland}^{t} + S_{meadows\\, and\\, pastures}^{t}}$$\n\nwhere:\n\n$ENH3_{agriculture}^{t}$ = NH3 emmisions from agriculture in the year $t$ \n\n$ENH3_{livestock}^{t}$ = NH3 emmisions from livestock in the year $t$ \n\n$S_{cropland}^{t}$ = croplands area in year $t$ \n\n$S_{meadows\\, and\\, pastures}^{t}$ = meadows and pastures area in year $t$ \n");
         var propertyEditor = editor.getEditor('root.formula');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -638,7 +638,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('justificacion_global', "The indicator is part of the EU Sustainable Development Goals (SDG) indicator set. \nIt is used to monitor progress towards SDG 2 on ending hunger and malnutrition and is \nintegrated into the European Commission's priorities within the framework of the European Green Deal.\n\nThe indicator measures ammonia (NH3) emissions as a result of agricultural production. \nThese emissions result from manure management, applications of inorganic nitrogen fertilisers \nand animal manure applied to soil, as well as urine and dung deposited by grazing animals.\n\nAmmonia ($NH_3$) is a colorless, pungent-smelling, corrosive gas produced by the decomposition \nof plant organic matter and human and animal excrement. When released into the atmosphere, \nammonia contributes to air pollution. The agricultural sector remains the largest contributor \nto ammonia emissions in the EU.\n\nMeasures implemented within the framework of the Common Agricultural Policy (CAP) and the Water \nFramework Directive have led the EU to reduce ammonia emissions from agriculture since the 1990s. \nSpecifically, measures to change agricultural practices led to reductions in the use of nitrogen \nfertilizers and a decrease in livestock density per hectare across the EU-15.\n\nThe National Emission Reduction Commitments Directive (NEC Directive) sets national emission \nreduction commitments for Member States and the EU for five major air pollutants, including ammonia.\n\nSource: Eurostat\n");
+        var currentValue = normalizeCurrentValue('justificacion_global', "The indicator is part of the EU Sustainable Development Goals (SDG) indicator set. \nIt is used to monitor progress towards SDG 2 on ending hunger and malnutrition and is \nintegrated into the European Commission's priorities within the framework of the European Green Deal.\n\nThe indicator measures ammonia (NH3) emissions as a result of agricultural production. \nThese emissions result from manure management, applications of inorganic nitrogen fertilisers \nand animal manure applied to soil, as well as urine and dung deposited by grazing animals.\n\nAmmonia (NH3) is a colorless, pungent-smelling, corrosive gas produced by the decomposition \nof plant organic matter and human and animal excrement. When released into the atmosphere, \nammonia contributes to air pollution. The agricultural sector remains the largest contributor \nto ammonia emissions in the EU.\n\nMeasures implemented within the framework of the Common Agricultural Policy (CAP) and the Water \nFramework Directive have led the EU to reduce ammonia emissions from agriculture since the 1990s. \nSpecifically, measures to change agricultural practices led to reductions in the use of nitrogen \nfertilizers and a decrease in livestock density per hectare across the EU-15.\n\nThe National Emission Reduction Commitments Directive (NEC Directive) sets national emission \nreduction commitments for Member States and the EU for five major air pollutants, including ammonia.\n\nSource: Eurostat\n");
         var propertyEditor = editor.getEditor('root.justificacion_global');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -732,7 +732,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-03-28");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-05-15");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -880,7 +880,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250515065122'></script>
+<script src='/site/assets/js/sdg.js?v=20250516065051'></script>
 
 
 <script>
@@ -900,7 +900,7 @@ data-event-label="high"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250515065122"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250516065051"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

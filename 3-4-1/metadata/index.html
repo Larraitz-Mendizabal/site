@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250515065122">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20250516065051">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -552,7 +552,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('definicion', "\nThis indicator is composed of two time series:\n\n <b>-Premature mortality rate (between ages 30 and 70) attributed to non-communicable diseases: \n probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or \n chronic respiratory disease.\n\n <b>-Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory \n disease per 100,000 inhabitants </b>: Deaths attributed to cardiovascular disease, cancer, diabetes \n or chronic respiratory disease per 100,000 inhabitants.\n");
+        var currentValue = normalizeCurrentValue('definicion', "\nThis indicator is composed of two time series:\n\n  <b>- Premature mortality rate (between ages 30 and 70) attributed to non-communicable diseases:</b>  \n probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or \n chronic respiratory disease.\n\n  <b>- Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory \n disease per 100,000 inhabitants:</b> Deaths attributed to cardiovascular disease, cancer, diabetes \n or chronic respiratory disease per 100,000 inhabitants. \n");
         var propertyEditor = editor.getEditor('root.definicion');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -566,7 +566,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('formula', "\n<b>Premature mortality rate attributed to non-communicable diseases</b>\n\n$$^{5}M_x = \\frac{DENT_{x,x+5}^{t}}{PENT_{x,x+5}^{t}}$$\n\nwhere:\n\n$DENT_{x,x+5}^{t} =$ Deaths attributed to the 4 non-communicable diseases\nbetween exact age $x$ and exact age $x+5$ in year $t$\n\n$P^{t} =$ population between exact age $x$ and exact age $x+5$ in year $t$\n\n\n<b>Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory \n disease per 100,000 inhabitants</b>\n\n\n$$TM_{ENT}^{t} = \\frac{D_{ENT}^{t}}{P^{t}} \\cdot 100.000$$\n\n\nwhere:\n\n$D_{ENT}^{t} =$ Deaths attributed to non-communicable diseases in year $t$\n\n$P^{t} =$ population as of 1 July of year $t$\n");
+        var currentValue = normalizeCurrentValue('formula', "\n<b>Premature mortality rate attributed to non-communicable diseases</b>\n\n$$^{5}M_x = \\frac{DENT_{x,x+5}^{t}}{PENT_{x,x+5}^{t}}$$\n\nwhere:\n\n$DENT_{x,x+5}^{t} =$ Deaths attributed to the 4 non-communicable diseases\nbetween exact age $x$ and exact age $x+5$ in year $t$\n\n$P^{t} =$ population between exact age $x$ and exact age $x+5$ in year $t$\n\n\n<b>Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory \ndisease per 100,000 inhabitants</b>\n\n\n$$TM_{ENT}^{t} = \\frac{D_{ENT}^{t}}{P^{t}} \\cdot 100.000$$\n\n\nwhere:\n\n$D_{ENT}^{t} =$ Deaths attributed to non-communicable diseases in year $t$ \n\n$P^{t} =$ population as of 1 July of year $t$ \n");
         var propertyEditor = editor.getEditor('root.formula');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -638,7 +638,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('justificacion_global', "\nMorbidity from noncommunicable diseases (NCDs) among adults is increasing rapidly globally due to aging \nand epidemiological transitions. Cardiovascular disease, cancer, diabetes, and chronic respiratory \ndiseases are the four leading causes of the NCD burden. Measuring the risk of dying from these four \nleading causes is important for assessing the extent of the premature NCD mortality burden in a population, \nassuming they would experience current mortality rates at any age and would not die from any other cause \nof death (e.g., injuries or HIV/AIDS).\n\nThe mortality rate attributed to cardiovascular disease, cancer, diabetes, or chronic respiratory disease \nis the probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or \nchronic respiratory disease, defined as the percentage of 30-year-olds who would die before reaching age 70\nfrom cardiovascular disease, cancer, diabetes, or chronic respiratory disease, assuming they would \nexperience current mortality rates at any age and would not die from any other cause of death (e.g., \ninjuries or HIV/AIDS).\n");
+        var currentValue = normalizeCurrentValue('justificacion_global', "\nMorbidity from noncommunicable diseases (NCDs) among adults is increasing rapidly globally due to aging \nand epidemiological transitions. Cardiovascular disease, cancer, diabetes, and chronic respiratory \ndiseases are the four leading causes of the NCD burden. Measuring the risk of dying from these four \nleading causes is important for assessing the extent of the premature NCD mortality burden in a population, \nassuming they would experience current mortality rates at any age and would not die from any other cause \nof death (e.g., injuries or HIV/AIDS).\n\nThe mortality rate attributed to cardiovascular disease, cancer, diabetes, or chronic respiratory disease \nis the probability of dying between ages 30 and 70 from cardiovascular disease, cancer, diabetes, or \nchronic respiratory disease, defined as the percentage of 30-year-olds who would die before reaching age 70\nfrom cardiovascular disease, cancer, diabetes, or chronic respiratory disease, assuming they would \nexperience current mortality rates at any age and would not die from any other cause of death (e.g., \ninjuries or HIV/AIDS). \n\nSource: United Nations Statistics Division \n");
         var propertyEditor = editor.getEditor('root.justificacion_global');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -732,7 +732,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-04-02");
+        var currentValue = normalizeCurrentValue('national_metadata_updated_date', "2025-05-15");
         var propertyEditor = editor.getEditor('root.national_metadata_updated_date');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -880,7 +880,7 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20250515065122'></script>
+<script src='/site/assets/js/sdg.js?v=20250516065051'></script>
 
 
 <script>
@@ -900,7 +900,7 @@ data-event-label="high"
 
     
     
-    <script src="/site/assets/js/custom.js?v=20250515065122"></script><script>
+    <script src="/site/assets/js/custom.js?v=20250516065051"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

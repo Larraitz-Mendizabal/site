@@ -1686,6 +1686,14 @@
           "status": "notstarted"
         },
         {
+          "id": "15-1-E1",
+          "title": "global_indicators.15-1-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/15-1-E1/",
+          "status": "notstarted"
+        },
+        {
           "id": "15-2-1",
           "title": "Progress towards sustainable forest management",
           "description": "",
@@ -1819,6 +1827,14 @@
           "description": "",
           "keywords": "",
           "href": "/site/16-1-4/",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-1-E1",
+          "title": "global_indicators.16-1-E1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/16-1-E1/",
           "status": "notstarted"
         },
         {
@@ -2179,6 +2195,70 @@
           "description": "",
           "keywords": "",
           "href": "/site/17-19-2/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "OCECA",
+      "title": "global_goals.OCECA-title",
+      "indicators": [
+        
+        {
+          "id": "OCECA-1-2-1-1A",
+          "title": "global_indicators.OCECA-1-2-1-1A-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-1-2-1-1A/",
+          "status": "notstarted"
+        },
+        {
+          "id": "OCECA-1-2-1-2A",
+          "title": "global_indicators.OCECA-1-2-1-2A-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-1-2-1-2A/",
+          "status": "notstarted"
+        },
+        {
+          "id": "OCECA-1-2-1-2B",
+          "title": "global_indicators.OCECA-1-2-1-2B-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-1-2-1-2B/",
+          "status": "notstarted"
+        },
+        {
+          "id": "OCECA-1-2-2-1A",
+          "title": "global_indicators.OCECA-1-2-2-1A-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-1-2-2-1A/",
+          "status": "notstarted"
+        },
+        {
+          "id": "OCECA-1-a-2-1",
+          "title": "global_indicators.OCECA-1-a-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-1-a-2-1/",
+          "status": "notstarted"
+        },
+        {
+          "id": "OCECA-1-a-2-2",
+          "title": "global_indicators.OCECA-1-a-2-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-1-a-2-2/",
+          "status": "notstarted"
+        },
+        {
+          "id": "OCECA-6-1-1",
+          "title": "global_indicators.OCECA-6-1-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/OCECA-6-1-1/",
           "status": "notstarted"
         }]
     }
